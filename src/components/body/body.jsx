@@ -6,10 +6,10 @@ import ethics from '../../assets/images/ethics.jpg'
 import manuscript from '../../assets/images/submission.jpg'
 export default function Body () {
     return (<>
-        <section className="xl:w-[64%] w-[90%] mt-[300px] relative z-0 mx-auto md:flex">
-            <div className="w-full md:w-[80%]">
+        <section className="2xl:w-[64%] w-[90%] mt-[320px] relative z-0 mx-auto md:flex justify-between mb-10">
+            <div className="w-full md:w-[70%]">
                 <div className="index">
-                    <img className="md:w-[90%] w-full h-[150px] md:h-[400px]" src={banner} alt="Banner" />
+                    <img className="md:w-[90%] w-full h-[150px] md:h-[280px] xxl:h-[400px]" src={banner} alt="Banner" />
                 </div>
                 <div className="py-6">
                     <p className="text-justify text-[16px] selection:bg-[#910506] selection:text-white leading-[28px] text-[#626262] mb-[20px]">
@@ -34,7 +34,7 @@ export default function Body () {
                                 <span>Published quarterly, PAJOL would provide readers with a wide array of titles that would include Original scientific papers addressing the current issues in life sciences and Review articles (thought-provoking, short and focused reviews) directed at topics of general interest and importance, written by experts in the field. Letter to the Editor would allow cconstructive criticisms and discussions of published papers. Letters of relevance and interest to the community will be published at the discretion of the editorial board. Editorials would facilitate an ongoing dialogue on key issues. PAJOLS will also publish papers on practical programmed, short notes and reports of meetings, conference proceedings and professional announcements. The journal is committed to prompt review process with timely publication of all accepted papers.</span>
                             </p>
 
-                            <span className="text-[16px] md:text-[28px]">Current Issue can be assess by clicking <a className="text-[#800000] font-semibold" href="/">here</a></span>
+                            <span className="text-[16px] md:text-[24px]">Current Issue can be assess by clicking <a className="text-[#800000] font-semibold" href="/">here</a></span>
                         </div>
                     </div>
                 </div>
@@ -76,12 +76,62 @@ export default function Body () {
                     </div>
                 </div>
 
-                <div className="text-[24px] mt-[30px] text-white w-full py-4 bg-[#910506] flex justify-center mb-[20px]">Creative Commons</div>
+                <div className="text-[24px] mt-[30px] text-white w-full py-2 bg-[#910506] flex justify-center mb-[20px]">Creative Commons</div>
 
                 <span className="text-[14px] leading-6 md:text-[16px] selection:bg-[#910506] selection:text-white md:leading-9">Creative Commons provides option to choose which rights one want to control and want to grant to others with respect to ones publication. They do not replace copyright, but are based upon it. The publications here are licensed under a <a className="text-[#910506]" href="/">Creative Commons Attribution 4.0 International License.</a></span>
 
             </div>
-            <div>
+            <div className="w-full mt-[50px] md:mt-0 md:w-[28%]">
+                <div className="text-[#910506] font-semibold selection:bg-[#910506] selection:text-white">
+                    <ul>
+                        <li className="py-[2px]"><a className="hover:underline" href="/">Submit Article</a></li>
+                        <li className="py-[2px]"><a className="hover:underline" href="/">Submission Guide</a></li>
+                        <li className="py-[2px]"><a className="hover:underline" href="/">Author's Guide</a></li>
+                        <li className="py-[2px]"><a className="hover:underline" href="/">Plagiarism</a></li>
+                        <li className="py-[2px]"><a className="hover:underline" href="/">Editorial Policy</a></li>
+                        <li className="py-[2px]"><a className="hover:underline" href="/">Publication fee</a></li>
+                    </ul>
+                </div>
+
+                <button className="w-full py-3 bg-[#007dc2] text-[18px] text-white mt-[50px] mb-[20px]">Search</button>
+                <input type="search" className="w-full px-3 py-2 outline-none border-[4px] border-[#f6f6f6] focus:bg-[#d1e4f0]" placeholder="Enter your search" />
+
+                <button className="w-full py-3 bg-[#e67817] text-[18px] text-white mt-[50px] mb-[40px]">Archive</button>
+
+                <div className="flex flex-col gap-4 text-[#910506]">
+                    <div>
+                        <label className="font-semibold">Volume 8 (2024)</label>
+                        <div className="w-full bg-[rgba(0,0,0,.03)]">
+                            <ul className="py-3 list-disc">
+                                <li className="ml-8 py-1"><a className="hover:underline" href="/">Issue 1</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <label className="font-semibold">Volume 7 (2023)</label>
+                        <div className="w-full bg-[rgba(0,0,0,.03)]">
+                            <ul className="py-3 list-disc">
+                                <li className="ml-8 py-2"><a className="hover:underline" href="/">Issue 1</a></li>
+                                <li className="ml-8 py-2"><a className="hover:underline" href="/">Issue 2</a></li>
+                                <li className="ml-8 py-2"><a className="hover:underline" href="/">Issue 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <label className="font-semibold">Volume 6 (2022)</label>
+                        <div className="w-full bg-[rgba(0,0,0,.03)]">
+                            <ul className="py-3 list-disc">
+                                <li className="ml-8 py-2"><a className="hover:underline" href="/">Issue 1</a></li>
+                                <li className="ml-8 py-2"><a className="hover:underline" href="/">Issue 2</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div className="mt-14">
+                    <span className="text-[#626262]">... click <a href="/" className="text-[#910506] hover:underline">here</a> for more</span>
+                </div>
 
             </div>
         </section>
