@@ -1,0 +1,12 @@
+.index {
+    position: absolute;
+    z-index: -10;
+}
+
+span {
+    font-weight: 400;
+}
+
+.list-disc {
+    color: #626262;
+}

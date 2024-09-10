@@ -1,0 +1,45 @@
+.section {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: whitesmoke;
+}
+
+.nav-links-div {
+    width: 100%;
+    background-color: #910506 !important;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.active {
+    background-color: #e67817;
+}
+
+.hover {
+    position: relative;
+}
+
+.hover:hover {
+    background-color: #e67817;
+}
+
+.sub_link {
+    position: absolute;
+    z-index: 1000;
+}
+
+.hover a:hover + .sub_link {
+    display: block;
+}
+
+.sub_link:hover {
+    display: block;
+}
+
+.sub_link ul li:hover {
+    background-color: #e67817;
+}
