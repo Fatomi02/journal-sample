@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../assets/logos/pajols-logo.jpg";
 import './navbar.css'
+import { Link, Outlet } from "react-router-dom";
 
 export default function Navbar () {
     return (<>
@@ -17,7 +18,7 @@ export default function Navbar () {
             </nav>
             <div className="nav-links-div">
                 <div className="xl:w-[64%] hidden w-[full] lg:[80%] md:flex justify-center gap-4 mx-auto text-white">
-                    <div className="active"><a className="w-[90px] h-[90px] flex flex-col text-center justify-center" href="/">Home</a></div>
+                    <div className="active"><Link className="w-[90px] h-[90px] flex flex-col text-center justify-center" to="/">Home</Link></div>
                     <div className="hover">
                         <a className="w-[90px] h-[90px] flex flex-col text-center link justify-center" href="/">About us</a>
                         <div className="bg-[#910506] text-[16px] hidden sub_link w-[220px]">
@@ -37,7 +38,7 @@ export default function Navbar () {
                                 <li className="py-3 pl-4"><a href="/">Editorial Policy</a></li>
                                 <li className="py-3 pl-4"><a href="/">Publication Ethics</a></li>
                                 <li className="py-3 pl-4"><a href="/">Digital Archive</a></li>
-                                <li className="py-3 pl-4"><a href="/">Plagiarism Policy</a></li>
+                                <li className="py-3 pl-4"><Link to="/plagiarism">Plagiarism Policy</Link></li>
                                 <li className="py-3 pl-4"><a href="/">Copyright</a></li>
                             </ul>
                         </div>
@@ -51,7 +52,7 @@ export default function Navbar () {
                                 <li className="py-3 pl-4"><a href="/">Author's Guide</a></li>
                                 <li className="py-3 pl-4"><a href="/">Submission Guide</a></li>
                                 <li className="py-3 pl-4"><a href="/">Indexing</a></li>
-                                <li className="py-3 pl-4"><a href="/">Publication fee</a></li>
+                                <li className="py-3 pl-4"><Link to="/publicationfee">Publication fee</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -61,5 +62,7 @@ export default function Navbar () {
                 </div>
             </div>
         </section>
+
+        <Outlet />
     </>)
 }

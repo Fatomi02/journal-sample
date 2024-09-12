@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet, Link } from "react-router-dom";
 import './footer.css'
 
 export default function Footer () {
@@ -24,8 +25,10 @@ export default function Footer () {
                 </div>
                 <div className="text-white selection:bg-[#910506] selection:text-white">
                     <ul>
-                        <li className="py-1 pl-4"><a className="hover:underline" href="/">Plagiarism Policy</a></li>
-                        <li className="py-1 pl-4"><a className="hover:underline" href="/">Publication fee</a></li>
+                        <li className="py-1 pl-4 hover:underline">
+                            <Link to="/plagiarism">Plagiarism Policy</Link>
+                        </li>
+                        <li className="py-1 pl-4 hover:underline"><Link to="/publicationfee">Publication fee</Link></li>
                         <li className="py-1 pl-4"><a className="hover:underline" href="/">Author's Guide</a></li>
                         <li className="py-1 pl-4"><a className="hover:underline" href="/">Submission Guide</a></li>
                     </ul>
@@ -43,5 +46,6 @@ export default function Footer () {
             <span>Powered by Olaitan</span>
 
         </section>
+        <Outlet />
     </>)
 }
