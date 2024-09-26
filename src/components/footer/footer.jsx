@@ -17,20 +17,18 @@ export default function Footer () {
                 <div className="text-white selection:bg-[#910506] selection:text-white">
                     <ul>
                         <li className="py-1 pl-4"><a className="hover:underline" href="/">Open Access</a></li>
-                        <li className="py-1 pl-4"><a className="hover:underline" href="/">Editorial Policy</a></li>
-                        <li className="py-1 pl-4"><a className="hover:underline" href="/">Publication Ethics</a></li>
-                        <li className="py-1 pl-4"><a className="hover:underline" href="/">Digital Archive</a></li>
-                        <li className="py-1 pl-4"><a className="hover:underline" href="/">Copyright</a></li>
+                        <li className="py-1 pl-4 hover:underline"><Link to="/editorialpolicy">Editorial Policy</Link></li>
+                        <li className="py-1 pl-4 hover:underline"><Link to="/publicationethics">Publication Ethics</Link></li>
+                        <li className="py-1 pl-4 hover:underline"><Link to="/digitalarchive">Digital Archive</Link></li>
+                        <li className="py-1 pl-4 hover:underline"><Link to="/copyright">Copyright</Link></li>
                     </ul>
                 </div>
                 <div className="text-white selection:bg-[#910506] selection:text-white">
                     <ul>
-                        <li className="py-1 pl-4 hover:underline">
-                            <Link to="/plagiarism">Plagiarism Policy</Link>
-                        </li>
+                        <li className="py-1 pl-4 hover:underline"><Link to="/plagiarism">Plagiarism Policy</Link></li>
                         <li className="py-1 pl-4 hover:underline"><Link to="/publicationfee">Publication fee</Link></li>
-                        <li className="py-1 pl-4"><a className="hover:underline" href="/">Author's Guide</a></li>
-                        <li className="py-1 pl-4"><a className="hover:underline" href="/">Submission Guide</a></li>
+                        <li className="py-1 pl-4 hover:underline"><Link to="/authorsguide">Author's Guide</Link></li>
+                        <li className="py-1 pl-4 hover:underline"><Link to="/submissionguide">Submission Guide</Link></li>
                     </ul>
                 </div>
                 <div className="text-white selection:bg-[#910506] selection:text-white">

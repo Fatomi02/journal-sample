@@ -35,11 +35,11 @@ export default function Navbar () {
                         <div className="bg-[#910506] text-[16px] hidden sub_link w-[220px]">
                             <ul>
                                 <li className="py-3 pl-4"><a href="/">Open Access</a></li>
-                                <li className="py-3 pl-4"><a href="/">Editorial Policy</a></li>
-                                <li className="py-3 pl-4"><a href="/">Publication Ethics</a></li>
-                                <li className="py-3 pl-4"><a href="/">Digital Archive</a></li>
+                                <li className="py-3 pl-4"><Link to="/editorialpolicy">Editorial Policy</Link></li>
+                                <li className="py-3 pl-4"><Link to="/publicationethics">Publication Ethics</Link></li>
+                                <li className="py-3 pl-4"><Link to="/digitalarchive">Digital Archive</Link></li>
                                 <li className="py-3 pl-4"><Link to="/plagiarism">Plagiarism Policy</Link></li>
-                                <li className="py-3 pl-4"><a href="/">Copyright</a></li>
+                                <li className="py-3 pl-4"><Link href="/copyright">Copyright</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -49,8 +49,8 @@ export default function Navbar () {
                             <ul>
                                 <li className="py-3 pl-4"><a href="/">Current</a></li>
                                 <li className="py-3 pl-4"><a href="/">Archive</a></li>
-                                <li className="py-3 pl-4"><a href="/">Author's Guide</a></li>
-                                <li className="py-3 pl-4"><a href="/">Submission Guide</a></li>
+                                <li className="py-3 pl-4"><Link to="/authorsguide">Author's Guide</Link></li>
+                                <li className="py-3 pl-4"><Link href="/submissionguide">Submission Guide</Link></li>
                                 <li className="py-3 pl-4"><a href="/">Indexing</a></li>
                                 <li className="py-3 pl-4"><Link to="/publicationfee">Publication fee</Link></li>
                             </ul>

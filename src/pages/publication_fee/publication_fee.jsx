@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../../components/navbar/navbar";
 import Footer from "../../components/footer/footer";
 import { Link, Outlet } from "react-router-dom";
 import Widget from "../../components/widget/widget";
 
 export default function PublicationFee () {
+    useEffect(() => {
+        // Scroll to top on component mount
+        window.scrollTo(0, 0);
+      }, []); // Empty dependency array means this runs once when the component mounts
+
     return (
         <>
             <Navbar />
