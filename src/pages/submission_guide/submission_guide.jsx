@@ -1,73 +1,190 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 import Navbar from "../../components/navbar/navbar";
 import Footer from "../../components/footer/footer";
 import { Link, Outlet } from "react-router-dom";
-import Widget from "../../components/widget/widget";
 
-export default function SubmissionGuide () {
-    useEffect(() => {
-        // Scroll to top on component mount
-        window.scrollTo(0, 0);
-      }, []); // Empty dependency array means this runs once when the component mounts
+export default function SubmissionGuide() {
+  useEffect(() => {
+    // Scroll to top on component mount
+    window.scrollTo(0, 0);
+  }, []); // Empty dependency array means this runs once when the component mounts
 
-    return (
-        <>
-            <Navbar />
-                <div className="w-full mt-[240px] md:mt-[270px] text-center relative z-0 mx-auto bg-[#f6f6f6] py-[30px] shadow-[0_1px_0px_0px_rgba(0,0,0,0.3)]">
-                    <h2 className="text-[30px] leading-9 italic text-[#444444]">Submission Guide</h2>
-                    <ul className="flex justify-center gap-4 text-[#797979] mt-3">
-                        <li className="hover:underline"><Link to="/">Home</Link></li>
-                        <li><span> &gt;</span></li>
-                        <li className="hover:underline"><Link to="/submissionguide">Submission Guide</Link></li>
-                    </ul>
+  return (
+    <>
+      <Navbar />
+      <div className="w-full mt-[240px] md:mt-[270px] text-center relative z-0 mx-auto bg-[#f6f6f6] py-[30px] shadow-[0_1px_0px_0px_rgba(0,0,0,0.3)]">
+        <h2 className="text-[30px] leading-9 italic text-[#444444]">
+          Submission Guide
+        </h2>
+        <ul className="flex justify-center gap-4 text-[#797979] mt-3">
+          <li className="hover:underline">
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <span> &gt;</span>
+          </li>
+          <li className="hover:underline">
+            <Link to="/submissionguide">Submission Guide</Link>
+          </li>
+        </ul>
+      </div>
+      <section className="2xl:w-[64%] mx-auto md:flex w-[86%] mt-[70px] mb-10">
+        <div className="w-full md:w-[75%] text-justify text-[#626262] text-[16px] mt-[-36px] leading-7">
+          <p className="text-[16px] leading-7">
+            Acta BioScientia is an open access journal that covers a wide range
+            of academic disciplines. Prior to manuscript submission, please read
+            carefully and adhere to the instructions in the submission
+            guidelines. This would ensure that a seamless process from
+            submission to the successful publication of your manuscript.
+          </p>
 
-                </div>
-                <section className="2xl:w-[64%] mx-auto md:flex justify-between w-[86%] mt-[70px] mb-10">
-                    <div className="w-full mx-auto md:w-[75%] text-justify text-[#626262] text-[16px] mt-[-36px] leading-7">
-                        <strong className="text-[#800000]">Preparation Checklist</strong>
-                        <p className="text-[16px] leading-7">
-                            As a part of the submission process, authors are required to check off their submission’s compliance with all of the following items, and submissions may be returned to authors that do not adhere to these guidelines. <br />
-                            The submission has not been previously published, nor is it before another journal for consideration (or an explanation has been provided in Comments to the Editor). <br />
-                            The submission file is in Microsoft Word document file format. <br />
-                            Where available, URLs for the references have been provided. <br />
-                            The text is 1.5 line spaced; uses a 12-point font; employs italics, rather than underlining (except with URL addresses); and all illustrations, figures, and tables are submitted as a separate file. The text adheres to the stylistic and bibliographic requirements outlined in the Author Guidelines.                       
-                        </p>
+          <h4 className="text-[#800000] font-bold text-center my-3">
+            Manuscript Submission
+          </h4>
+          <p className="text-[16px] leading-7">
+            Acta BioScientia accepts manuscripts prepared in the following
+            formats: Microsoft Word (2007 and above) submitted via{" "}
+            <a className="text-blue-700" href="/home">
+              the Journal Website.
+            </a>{" "}
+            If the online submission proves difficult due to technical issues,
+            manuscripts can be submitted via email at ___________. <br />
+            <p className="my-2">
+              Full text, including Figures and Tables should be submitted via
+              our online platform
+            </p>
+          </p>
+          <strong className="text-[#800000] text-center mb-3">
+            Article Type
+          </strong>
+          <p className="text-[16px] leading-7">
+            The Journal welcomes the submission of full-length research
+            articles, review articles, thematic issues and short reports.{" "}
+          </p>
+          <strong className="text-[#800000] text-center mb-3">
+            Manuscript Preparation
+          </strong>
+          <p className="text-[16px] leading-7 mb-4">
+            All Manuscripts submitted to this journal must be written in
+            English. Manuscript length should be at least 3000 words but not
+            more than 10000 words ( references included). The main text should
+            be divided into sections, including Introduction, Materials and
+            Methods, Results, Discussion, Conclusion, Acknowledgement, Conflict
+            of Interest, Appendix and Reference.{" "}
+          </p>
+          <strong className="text-[#800000] text-center mb-4">Title</strong>
+          <p className="text-[16px] leading-7 mb-5">
+            The title of the article should be brief, concise and informative.
+            Word count should not exceed 20.{" "}
+          </p>
+          <strong className="text-[#800000] text-center my-2">
+            Author Details
+          </strong>
+          <p className="text-[16px] leading-7">
+            Manuscript should contain the full name for all authors, with the
+            names of authors separated by a comma. Also, full affiliations
+            including academic affiliation, city, country and e-mail of the
+            authors must be provided. Details of the corresponding author
+            particularly the e-mail address should be clearly stated.
+          </p>
+          <strong className="text-[#800000] text-center my-2">Abstract</strong>
+          <p className="text-[16px] leading-7">
+            The abstract should not exceed 250 words. It should be written as a
+            continuous paragraph and must include background of the research,
+            methodology, results, and conclusions. Emphasis must be placed on
+            the contributions to the current body of knowledge.
+          </p>
+          <strong className="text-[#800000] text-center my-2">Keywords</strong>
+          <p className="text-[16px] leading-7">
+            3-6 keywords that accurately reflect the theme of the manuscript
+            should be included.{" "}
+          </p>
+          <strong className="text-[#800000] text-center my-2">
+            Introduction
+          </strong>
+          <p className="text-[16px] leading-7">
+            This should provide a brief description of the scope and relevance
+            of the research, including current body of knowledge of the subject
+            area{" "}
+          </p>
+          <strong className="text-[#800000] text-center my-2">
+            Materials and Methods
+          </strong>
+          <p className="text-[16px] leading-7">
+            This section should give a concise description of the research type,
+            materials, experimental design and statistical tests used for data
+            analysis etc.{" "}
+          </p>
+          <strong className="text-[#800000] text-center my-2">
+            Discussion
+          </strong>
+          <p className="text-[16px] leading-7">
+            Manuscripts should have accurate unbiased interpretation of result
+            data, also comparisons should be made with similar studies. The
+            significance of findings should be clearly depicted.{" "}
+          </p>
+          <strong className="text-[#800000] text-center my-2">
+            Conclusion
+          </strong>
+          <p className="text-[16px] leading-7">
+            Conclusions reached from the research would be presented here. This
+            section would also include the contributions of the study to the
+            body of knowledge{" "}
+          </p>
+          <strong className="text-[#800000] text-center my-2">
+            Acknowledgement
+          </strong>
+          <p className="text-[16px] leading-7">
+            All contributors who do not meet the criteria for authorship (as
+            stated below) should be listed in the acknowledgements section.{" "}
+          </p>
+          <strong className="text-[#800000] text-center my-2">
+            Declaration of conflict of interest{" "}
+          </strong>
+          <p className="text-[16px] leading-7">
+            A ‘Declaration of Conflict of Interest’ statement should be included
+            at the end of the manuscript, just before the references. If Authors
+            have no conflict, then they should state categorically that “The
+            Author(s) declare(s) that there is no conflict of interest.”
+          </p>
+          <strong className="text-[#800000] text-center my-2">
+            Funding
+          </strong>
+          <p className="text-[16px] leading-7">
+            <strong>Acta BioScientia</strong> requires that all authors acknowledge completely their funding. If the authors did not receive any outside funding, then “This research received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors.” should be clearly stated in this section.
+          </p>
+          <strong className="text-[#800000] text-center my-2">
+            References 
+          </strong>
+          <p className="text-[16px] leading-7">
+            The Journal uses a numeric referencing style. This referencing style entails that each source is numbered according to the order of appearance in the text. This numbers are retained for the same source anytime they appear again in the text. The reference list is then a single numbered list of citations with full details. All in text references are expected to be numbered in square brackets. 
+          </p>
+          <strong className="text-[#800000] text-center my-2">
+            Reference Format
+          </strong>
+          <p className="text-[16px] leading-7">
+            The NLM reference list format is used by this journal. Minimum information required for journal article reference include author (s) surname, initials (without punctuation mark) , abbreviated journal title, year of publication, volume number, and page number. All authors should be cited. Journal abbreviations should follow the Index Medicus or MEDLINE.          </p>
+          <strong className="text-[#800000] text-center my-2">
+            References 
+          </strong>
+          <p className="text-[16px] leading-7">
+            The Journal uses a numeric referencing style. This referencing style entails that each source is numbered according to the order of appearance in the text. This numbers are retained for the same source anytime they appear again in the text. The reference list is then a single numbered list of citations with full details. All in text references are expected to be numbered in square brackets. 
+          </p>
+          <div className="mt-4 flex flex-col gap-1">
+            <p className="text-[16px] leading-7">
+            <b>Journal article:</b> Onaolapo AY, Ojo FO, Adeleye OO, Falade J, Onaolapo OJ. iDabetes Mellitus and Energy Dysmetabolism in Alzheimer's Disease: Understanding the Relationships and Potential Therapeutic Targets. Curr Diabetes Rev. 2023;19(8):e020123212333.
+            </p>
+            <p className="text-[16px] leading-7">
+                <b>Accepted Article:</b> For articles that have been accepted but yet to be published referencing style is same as above however “In press” replaces page numbers.
+            </p>
+            <p className="text-[16px] leading-7">
+                <b>Book:</b> Gopi S, Balakrishnan P Handbook of Nutraceuticals and Natural Products, 1st ed.; Wiley & Sons: New York, 2022.            </p>
+          </div>
+        </div>
+      </section>
+      <Footer />
 
-                        <strong className="text-[#800000] mb-2">Requirements</strong>
-                        <p className="text-[16px] leading-7">All submissions should be prepared with the following files and submitted via our online system</p>
-                        <ol className="list-decimal flex flex-col gap-3 pl-[30px] md:pl-[40px]">
-                            <li><b>Cover letter:</b> which would include a concise summary of why your paper is a valuable addition to the scientific literature and a brief relation of your study to previously published works.</li>
-                            <li><b>Full text:</b> The full text should be prepared following the formatting style of PAJOLS as described in manuscript organization section. Well prepared tables, figures and other illustrations can placed in the appropriate section where they are mentioned in the manuscript or at the end after references.</li>
-                        </ol>
-
-                        <h4 className="text-[#800000] font-bold text-center my-3">MANUSCRIPT ORGANIZATION</h4>
-
-                        <strong className="text-[#800000] text-center mb-2">Original Articles</strong>
-                        <p className="text-[16px] leading-7">
-                            Should be about 4000 words and organized in the following sections: Title page, abstract (not to exceed 350 words), Introduction, Methodology, Results, Discussion, Conclusion, Acknowledgments, References (not to exceed 50), Figures, Figure Legends, Tables & captions, Authors’ Should describe case diagnosis and investigations or treatments which are of exceptional interest, highlighting novel and important findings. Please refer to the short communications section for length and other specifications.
-                        </p>
-                        <strong className="text-[#800000] text-center mb-2">Letter to the editor</strong>
-                        <p className="text-[16px] leading-7">
-                            Should not exceed a total 1,200 words. References (not to exceed 10), figures and tables together should not be more than 2. Subdivisions of sections are not needed. Letters to the editor are generally updates on recent trends and research, but may also respond to recent articles published in PAJOLS.                       
-                        </p>
-                        <strong className="text-[#800000] text-center mb-3">Reviews</strong>
-                        <p className="text-[16px] leading-7 mb-4">
-                            Should be related to the scope of PAJOLS which are of broad interest to the target audience of the journal. These are usually invited, but authors identifying a need and wishing to submit a review article are welcome to contact the Editorial Office. Authors are advised to contact the Editorial Office before commencement of writing to ensure that a similar topic has not already been given to another author                        
-                        </p>
-                        <strong className="text-[#800000] text-center mb-4">Short Communication</strong>
-                        <p className="text-[16px] leading-7 mb-5">
-                            Should not exceed a total of 2500 words, including an abstract (not to exceed 250 words), references (not to exceed 20), figures (not more than 2), and tables (not to exceed 2). Subdivisions of sections are encouraged to help orient the reader.                        
-                        </p>
-                        <strong className="text-[#800000] text-center my-2">Case reports</strong>
-                        <p className="text-[16px] leading-7">
-                            Should describe case diagnosis and investigations or treatments which are of exceptional interest, highlighting novel and important findings. Please refer to the short communications section for length and other specifications.                        
-                        </p>
-                    </div>
-                    <Widget />
-                </section>
-            <Footer />
-
-            <Outlet />
-        </>
-    )
+      <Outlet />
+    </>
+  );
 }

@@ -10,7 +10,7 @@ export default function Navbar () {
                 <div className="flex align-middle gap-[20px] pl-[30px] lg:pl-0">
                     <img className="h-[120px] w-[125px] lg:h-[150px] md:mt-[15px] xl:mt-0 md:w-[135px] mx-[20px]" src={logo} alt="Logo" />
                     <div className="p-4 xl:w-[800px] hidden md:block">
-                        <h1 className="text-[28px] lg:text-[30px] xxl:text-[36px]  lg:leading-[40px] mb-3 text-[#910506]">Pan African Journal of Life Sciences (PAJOLS)</h1>
+                        <h1 className="text-[28px] lg:text-[30px] xxl:text-[36px]  lg:leading-[40px] mb-3 text-[#910506]">Acta BioScientia</h1>
                         <span className="font-medium text-[#910506] text-[14px] lg:text-[18px]"><i>A publication of Faculty of Basic Medical Sciences and Faculty of Basic Clinical Sciences,
                         Ladoke Akintola University of Technology, Ogbomoso</i></span>
                     </div>

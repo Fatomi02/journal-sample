@@ -40,7 +40,7 @@ export default function Footer () {
                 </div>
             </div>
 
-            <span>© PAJOLS 2024</span> <br />
+            <span>Copyright reserved © Acta BioScientia </span> <br />
             <span>Powered by Olaitan</span>
 
         </section>
