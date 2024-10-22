@@ -8,7 +8,7 @@ export default function Navbar () {
         <section className="w-full pt-1 section">
             <nav className="xl:w-[64%] mx-auto mt-3">
                 <div className="flex items-center gap-[20px] pl-[30px] lg:pl-0">
-                    <img className="h-[120px] w-[125px] lg:h-[150px] md:mt-[15px] xl:mt-0 md:w-[135px] mx-[20px]" src={logo} alt="Logo" />
+                    <img className="h-[130px] w-[125px] lg:h-[150px] md:mt-[15px] xl:mt-0 md:w-[135px] mx-[20px]" src={logo} alt="Logo" />
                     <div className="pl-4 xl:w-[800px] hidden md:block">
                         <h1 className="text-[28px] lg:text-[30px] xxl:text-[36px]  lg:leading-[40px] mb-3 text-[#d80c6c]">Acta BioScientia</h1>
                         <span className="font-medium text-[#d80c6c]"><i className="text-[14px] lg:text-[16px]">A publication of Faculty of Basic Medical Sciences and Faculty of Basic Clinical Sciences,
