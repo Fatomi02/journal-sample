@@ -23,8 +23,8 @@ export default function Plagiarism () {
                     </ul>
 
             </div>
-            <section className="2xl:w-[64%] mx-auto md:flex justify-between w-[86%] mt-[70px] mb-10">
-                <div className="w-full mx-auto md:w-[75%] text-justify text-[#626262] text-[16px] mt-[-36px] leading-7">
+            <section className="2xl:w-[64%] bg-[#FCFCFC] mx-auto md:flex justify-between w-[86%] mt-[70px] mb-10">
+                <div className="w-full mx-auto md:w-[75%] text-justify text-[#626262] text-[14px] mt-[-36px] leading-7">
                     PAJOLS take issues of copyright infringement, plagiarism or other breaches of best practice in publication very seriously. 
                     We seek to protect the rights of our authors and we always investigate claims of plagiarism or misuse of published articles. 
                     Equally, we seek to protect the reputation of the journal against malpractice. Submitted articles will be checked with plagiarism software. 

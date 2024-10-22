@@ -6,7 +6,7 @@ export default function Footer () {
     return (<>
         <section className="footer">
             <div className="xl:w-[64%] w-[90%] mt-[80px] text-start mx-auto flex flex-col md:flex-row mb-[30px] gap-[40px] xl:gap-[200px] pt-[60px] text-[14px]">
-                <div className="text-white selection:bg-[#910506] selection:text-white">
+                <div className="text-white selection:bg-[#d80c6c] selection:text-white">
                     <ul>
                         <li className="py-1 pl-4"><a className="hover:underline" href="/">Editor in chief</a></li>
                         <li className="py-1 pl-4"><a className="hover:underline" href="/">Editorial Board</a></li>
@@ -14,7 +14,7 @@ export default function Footer () {
                         <li className="py-1 pl-4"><a className="hover:underline" href="/">Review's Guide</a></li>
                     </ul>
                 </div>
-                <div className="text-white selection:bg-[#910506] selection:text-white">
+                <div className="text-white selection:bg-[#d80c6c] selection:text-white">
                     <ul>
                         <li className="py-1 pl-4"><a className="hover:underline" href="/">Open Access</a></li>
                         <li className="py-1 pl-4 hover:underline"><Link to="/editorialpolicy">Editorial Policy</Link></li>
@@ -23,7 +23,7 @@ export default function Footer () {
                         <li className="py-1 pl-4 hover:underline"><Link to="/copyright">Copyright</Link></li>
                     </ul>
                 </div>
-                <div className="text-white selection:bg-[#910506] selection:text-white">
+                <div className="text-white selection:bg-[#d80c6c] selection:text-white">
                     <ul>
                         <li className="py-1 pl-4 hover:underline"><Link to="/plagiarism">Plagiarism Policy</Link></li>
                         <li className="py-1 pl-4 hover:underline"><Link to="/publicationfee">Publication fee</Link></li>
@@ -31,7 +31,7 @@ export default function Footer () {
                         <li className="py-1 pl-4 hover:underline"><Link to="/submissionguide">Submission Guide</Link></li>
                     </ul>
                 </div>
-                <div className="text-white selection:bg-[#910506] selection:text-white">
+                <div className="text-white selection:bg-[#d80c6c] selection:text-white">
                     <ul>
                         <li className="py-1 pl-4"><i><b>Contact us</b></i></li>
                         <li className="py-1 pl-4">Email: <a className="hover:underline" href="mailto:">journal@gmail.com</a></li>

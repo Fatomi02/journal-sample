@@ -22,8 +22,8 @@ export default function DigitalArchive() {
                 </ul>
 
             </div>
-            <section className="2xl:w-[64%] mx-auto md:flex justify-between w-[86%] mt-[70px] mb-10">
-                <div className="w-full mx-auto md:w-[75%] text-justify text-[#626262] text-[16px] mt-[-36px] leading-7">
+            <section className="2xl:w-[64%] bg-[#FCFCFC] mx-auto md:flex justify-between w-[86%] mt-[70px] mb-10">
+                <div className="w-full mx-auto md:w-[75%] text-justify text-[#626262] text-[14px] mt-[-36px] leading-7">
                 </div>
                 <Widget />
             </section>

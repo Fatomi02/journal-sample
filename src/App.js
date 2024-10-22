@@ -9,6 +9,7 @@ import Copyright from './pages/copyright/copyright';
 import DigitalArchive from './pages/digital_archive/digital_archive';
 import PublicationEthics from './pages/publication_ethics/publication_ethics';
 import EditorialPolicy from './pages/editorial_policy/editorial_policy';
+import SubmitPage from './pages/submit_page/submitPage';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path='/digitalarchive' element={<DigitalArchive />} />
         <Route path='/publicationethics' element={<PublicationEthics />} />
         <Route path='/editorialpolicy' element={<EditorialPolicy />} />
+        <Route path='/submitpage' element={<SubmitPage />} />
       </Routes>
    </BrowserRouter>
   );

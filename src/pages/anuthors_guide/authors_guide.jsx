@@ -21,8 +21,8 @@ export default function AuthorGuide () {
                     </ul>
 
                 </div>
-                <section className="2xl:w-[64%] mx-auto md:flex justify-between w-[86%] mt-[70px] mb-10">
-                    <div className="w-full mx-auto md:w-[75%] text-justify text-[#626262] text-[16px] mt-[-36px] leading-7">
+                <section className="2xl:w-[64%] bg-[#FCFCFC] mx-auto md:flex justify-between w-[86%] mt-[70px] mb-10">
+                    <div className="w-full mx-auto md:w-[75%] text-justify text-[#626262] text-[14px] mt-[-36px] leading-7">
                         <h1 className="text-[#800000] font-semibold text-center mb-2">PREPARING YOUR MANUSCRIPT</h1>
                         <p className="text-[14px] leading-7">
                         Word (as .doc or .docx)is the preferred formats for the text and tables of your manuscript. The text should be 1.5 line-spaced; Times New Roman font with standard 12 point.
@@ -72,7 +72,7 @@ export default function AuthorGuide () {
                             <p className="text-[14px] leading-8">The Journal uses the BioMed referencing style. All references, within the text must be numbered consecutively, in square [ ] brackets. Citations should be listed in the order in which they are cited in the text, followed by any in tables or legends. Each reference must have an individual reference number. We recommend the use of Zotero (https://www.zotero.org/) reference management software.</p>
                             <strong className="text-[#800000] text-[14px] my-1">References should be formatted as follows:</strong> <br />
                             <strong className="text-[#800000] text-[14px] my-1 italic">Journal article</strong>
-                            <p lassName="text-[16px] leading-8">Snow RW, Guerra CA, Noor AM, Myint HY, Hay SI. The global distribution of clinical episodes of Plasmodium falciparum malaria. Nature. 2005; 434: 214–7.
+                            <p lassName="text-[14px] leading-8">Snow RW, Guerra CA, Noor AM, Myint HY, Hay SI. The global distribution of clinical episodes of Plasmodium falciparum malaria. Nature. 2005; 434: 214–7.
                             Salim N, Knopp S, Lweno O, Abdul U, Mohamed A, Schindler T, et al. Distribution and Risk Factors for Plasmodium and Helminth Co-infections: A Cross-Sectional Survey among Children in Bagamoyo District, Coastal Region of Tanzania. PLoSNegl Trop Dis. 2015; 9: e0003660.</p>
 
                             <strong className="text-[#800000] text-[14px] my-1 italic">Accepted, unpublished papers:</strong>

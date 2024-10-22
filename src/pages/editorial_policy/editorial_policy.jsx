@@ -22,8 +22,8 @@ export default function EditorialPolicy() {
                 </ul>
 
             </div>
-            <section className="2xl:w-[64%] mx-auto md:flex justify-between w-[86%] mt-[70px] mb-10">
-                <div className="w-full mx-auto md:w-[75%] text-justify text-[#626262] text-[16px] mt-[-36px] leading-7">
+            <section className="2xl:w-[64%] bg-[#FCFCFC] mx-auto md:flex justify-between w-[86%] mt-[70px] mb-10">
+                <div className="w-full mx-auto md:w-[75%] text-justify text-[#626262] text-[14px] mt-[-36px] leading-7">
                     Any manuscript submitted to the PAJOLS must not be under consideration by any other journal or already published in any journal or other citable form. 
                     Submission of a manuscript implies that all authors have read and agreed to its final content and take responsibility for their reported findings. 
                     Authors are expected to indicate that the study (where applicable) has been carried out with the approval of an appropriate ethical review committee. 

@@ -28,9 +28,9 @@ export default function SubmissionGuide() {
           </li>
         </ul>
       </div>
-      <section className="2xl:w-[64%] mx-auto md:flex w-[86%] mt-[70px] mb-10">
-        <div className="w-full md:w-[75%] text-justify text-[#626262] text-[16px] mt-[-36px] leading-7">
-          <p className="text-[16px] leading-7">
+      <section className="2xl:w-[64%] bg-[#FCFCFC] mx-auto md:flex w-[86%] mt-[70px] mb-10">
+        <div className="w-full md:w-[75%] text-justify text-[#626262] text-[14px] mt-[-36px] leading-7">
+          <p className="text-[14px] leading-7">
             Acta BioScientia is an open access journal that covers a wide range
             of academic disciplines. Prior to manuscript submission, please read
             carefully and adhere to the instructions in the submission
@@ -41,7 +41,7 @@ export default function SubmissionGuide() {
           <h4 className="text-[#800000] font-bold text-center my-3">
             Manuscript Submission
           </h4>
-          <p className="text-[16px] leading-7">
+          <p className="text-[14px] leading-7">
             Acta BioScientia accepts manuscripts prepared in the following
             formats: Microsoft Word (2007 and above) submitted via{" "}
             <a className="text-blue-700" href="/home">
@@ -57,14 +57,14 @@ export default function SubmissionGuide() {
           <strong className="text-[#800000] text-center mb-3">
             Article Type
           </strong>
-          <p className="text-[16px] leading-7">
+          <p className="text-[14px] leading-7">
             The Journal welcomes the submission of full-length research
             articles, review articles, thematic issues and short reports.{" "}
           </p>
           <strong className="text-[#800000] text-center mb-3">
             Manuscript Preparation
           </strong>
-          <p className="text-[16px] leading-7 mb-4">
+          <p className="text-[14px] leading-7 mb-4">
             All Manuscripts submitted to this journal must be written in
             English. Manuscript length should be at least 3000 words but not
             more than 10000 words ( references included). The main text should
@@ -73,14 +73,14 @@ export default function SubmissionGuide() {
             of Interest, Appendix and Reference.{" "}
           </p>
           <strong className="text-[#800000] text-center mb-4">Title</strong>
-          <p className="text-[16px] leading-7 mb-5">
+          <p className="text-[14px] leading-7 mb-5">
             The title of the article should be brief, concise and informative.
             Word count should not exceed 20.{" "}
           </p>
           <strong className="text-[#800000] text-center my-2">
             Author Details
           </strong>
-          <p className="text-[16px] leading-7">
+          <p className="text-[14px] leading-7">
             Manuscript should contain the full name for all authors, with the
             names of authors separated by a comma. Also, full affiliations
             including academic affiliation, city, country and e-mail of the
@@ -88,21 +88,21 @@ export default function SubmissionGuide() {
             particularly the e-mail address should be clearly stated.
           </p>
           <strong className="text-[#800000] text-center my-2">Abstract</strong>
-          <p className="text-[16px] leading-7">
+          <p className="text-[14px] leading-7">
             The abstract should not exceed 250 words. It should be written as a
             continuous paragraph and must include background of the research,
             methodology, results, and conclusions. Emphasis must be placed on
             the contributions to the current body of knowledge.
           </p>
           <strong className="text-[#800000] text-center my-2">Keywords</strong>
-          <p className="text-[16px] leading-7">
+          <p className="text-[14px] leading-7">
             3-6 keywords that accurately reflect the theme of the manuscript
             should be included.{" "}
           </p>
           <strong className="text-[#800000] text-center my-2">
             Introduction
           </strong>
-          <p className="text-[16px] leading-7">
+          <p className="text-[14px] leading-7">
             This should provide a brief description of the scope and relevance
             of the research, including current body of knowledge of the subject
             area{" "}
@@ -110,7 +110,7 @@ export default function SubmissionGuide() {
           <strong className="text-[#800000] text-center my-2">
             Materials and Methods
           </strong>
-          <p className="text-[16px] leading-7">
+          <p className="text-[14px] leading-7">
             This section should give a concise description of the research type,
             materials, experimental design and statistical tests used for data
             analysis etc.{" "}
@@ -118,7 +118,7 @@ export default function SubmissionGuide() {
           <strong className="text-[#800000] text-center my-2">
             Discussion
           </strong>
-          <p className="text-[16px] leading-7">
+          <p className="text-[14px] leading-7">
             Manuscripts should have accurate unbiased interpretation of result
             data, also comparisons should be made with similar studies. The
             significance of findings should be clearly depicted.{" "}
@@ -126,7 +126,7 @@ export default function SubmissionGuide() {
           <strong className="text-[#800000] text-center my-2">
             Conclusion
           </strong>
-          <p className="text-[16px] leading-7">
+          <p className="text-[14px] leading-7">
             Conclusions reached from the research would be presented here. This
             section would also include the contributions of the study to the
             body of knowledge{" "}
@@ -134,14 +134,14 @@ export default function SubmissionGuide() {
           <strong className="text-[#800000] text-center my-2">
             Acknowledgement
           </strong>
-          <p className="text-[16px] leading-7">
+          <p className="text-[14px] leading-7">
             All contributors who do not meet the criteria for authorship (as
             stated below) should be listed in the acknowledgements section.{" "}
           </p>
           <strong className="text-[#800000] text-center my-2">
             Declaration of conflict of interest{" "}
           </strong>
-          <p className="text-[16px] leading-7">
+          <p className="text-[14px] leading-7">
             A ‘Declaration of Conflict of Interest’ statement should be included
             at the end of the manuscript, just before the references. If Authors
             have no conflict, then they should state categorically that “The
@@ -150,34 +150,34 @@ export default function SubmissionGuide() {
           <strong className="text-[#800000] text-center my-2">
             Funding
           </strong>
-          <p className="text-[16px] leading-7">
+          <p className="text-[14px] leading-7">
             <strong>Acta BioScientia</strong> requires that all authors acknowledge completely their funding. If the authors did not receive any outside funding, then “This research received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors.” should be clearly stated in this section.
           </p>
           <strong className="text-[#800000] text-center my-2">
             References 
           </strong>
-          <p className="text-[16px] leading-7">
+          <p className="text-[14px] leading-7">
             The Journal uses a numeric referencing style. This referencing style entails that each source is numbered according to the order of appearance in the text. This numbers are retained for the same source anytime they appear again in the text. The reference list is then a single numbered list of citations with full details. All in text references are expected to be numbered in square brackets. 
           </p>
           <strong className="text-[#800000] text-center my-2">
             Reference Format
           </strong>
-          <p className="text-[16px] leading-7">
+          <p className="text-[14px] leading-7">
             The NLM reference list format is used by this journal. Minimum information required for journal article reference include author (s) surname, initials (without punctuation mark) , abbreviated journal title, year of publication, volume number, and page number. All authors should be cited. Journal abbreviations should follow the Index Medicus or MEDLINE.          </p>
           <strong className="text-[#800000] text-center my-2">
             References 
           </strong>
-          <p className="text-[16px] leading-7">
+          <p className="text-[14px] leading-7">
             The Journal uses a numeric referencing style. This referencing style entails that each source is numbered according to the order of appearance in the text. This numbers are retained for the same source anytime they appear again in the text. The reference list is then a single numbered list of citations with full details. All in text references are expected to be numbered in square brackets. 
           </p>
           <div className="mt-4 flex flex-col gap-1">
-            <p className="text-[16px] leading-7">
+            <p className="text-[14px] leading-7">
             <b>Journal article:</b> Onaolapo AY, Ojo FO, Adeleye OO, Falade J, Onaolapo OJ. iDabetes Mellitus and Energy Dysmetabolism in Alzheimer's Disease: Understanding the Relationships and Potential Therapeutic Targets. Curr Diabetes Rev. 2023;19(8):e020123212333.
             </p>
-            <p className="text-[16px] leading-7">
+            <p className="text-[14px] leading-7">
                 <b>Accepted Article:</b> For articles that have been accepted but yet to be published referencing style is same as above however “In press” replaces page numbers.
             </p>
-            <p className="text-[16px] leading-7">
+            <p className="text-[14px] leading-7">
                 <b>Book:</b> Gopi S, Balakrishnan P Handbook of Nutraceuticals and Natural Products, 1st ed.; Wiley & Sons: New York, 2022.            </p>
           </div>
         </div>
