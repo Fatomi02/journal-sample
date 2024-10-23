@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import HomePage from './components/homepage/homepage';
 import Plagiarism from './pages/plagiarism/plagiarism';
+import ContactPage from './pages/contact/contact';
 import PublicationFee from './pages/publication_fee/publication_fee';
 import AuthorGuide from './pages/anuthors_guide/authors_guide';
 import SubmissionGuide from './pages/submission_guide/submission_guide';
@@ -10,6 +11,7 @@ import DigitalArchive from './pages/digital_archive/digital_archive';
 import PublicationEthics from './pages/publication_ethics/publication_ethics';
 import EditorialPolicy from './pages/editorial_policy/editorial_policy';
 import SubmitPage from './pages/submit_page/submitPage';
+
 
 
 function App() {
@@ -26,6 +28,7 @@ function App() {
         <Route path='/publicationethics' element={<PublicationEthics />} />
         <Route path='/editorialpolicy' element={<EditorialPolicy />} />
         <Route path='/submitpage' element={<SubmitPage />} />
+        <Route path='/contactus' element={<ContactPage />} />
       </Routes>
    </BrowserRouter>
   );

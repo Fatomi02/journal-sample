@@ -18,9 +18,9 @@ export default function Navbar () {
             </nav>
             <div className="nav-links-div">
                 <div className="xl:w-[64%] hidden w-[full] lg:[80%] md:flex justify-center gap-4 mx-auto text-white">
-                    <div className="active"><Link className="w-[90px] h-[90px] flex flex-col text-center justify-center" to="/">Home</Link></div>
+                    <div className="active"><Link className="w-[90px] h-[70px] flex flex-col text-center justify-center" to="/">Home</Link></div>
                     <div className="hover">
-                        <a className="w-[90px] h-[90px] flex flex-col text-center link justify-center" href="/">About us</a>
+                        <a className="w-[90px] h-[70px] flex flex-col text-center link justify-center" href="/">About us</a>
                         <div className="bg-[#d80c6c] text-[14px] hidden sub_link w-[220px]">
                             <ul>
                                 <li className="py-3 pl-4"><a href="/">Editor in chief</a></li>
@@ -31,7 +31,7 @@ export default function Navbar () {
                         </div>
                     </div>
                     <div className="hover">
-                        <a className="w-[90px] h-[90px] flex flex-col text-center justify-center" href="/">Policy</a>
+                        <a className="w-[90px] h-[70px] flex flex-col text-center justify-center" href="/">Policy</a>
                         <div className="bg-[#d80c6c] text-[14px] hidden sub_link w-[220px]">
                             <ul>
                                 <li className="py-3 pl-4"><a href="/">Open Access</a></li>
@@ -44,20 +44,20 @@ export default function Navbar () {
                         </div>
                     </div>
                     <div className="hover">
-                        <a className="w-[90px] h-[90px] flex flex-col text-center justify-center" href="/">Journal</a>
+                        <a className="w-[90px] h-[70px] flex flex-col text-center justify-center" href="/">Journal</a>
                         <div className="bg-[#d80c6c] hidden sub_link w-[220px]">
                             <ul>
                                 <li className="py-3 pl-4"><a href="/">Current</a></li>
                                 <li className="py-3 pl-4"><a href="/">Archive</a></li>
                                 <li className="py-3 pl-4"><Link to="/authorsguide">Author's Guide</Link></li>
-                                <li className="py-3 pl-4"><Link href="/submissionguide">Submission Guide</Link></li>
+                                <li className="py-3 pl-4"><Link to="/submissionguide">Submission Guide</Link></li>
                                 <li className="py-3 pl-4"><a href="/">Indexing</a></li>
                                 <li className="py-3 pl-4"><Link to="/publicationfee">Publication fee</Link></li>
                             </ul>
                         </div>
                     </div>
                     <div className="hover">
-                        <a className="w-[90px] h-[90px] flex flex-col text-center justify-center" href="/">Contact us</a>
+                        <span className="w-[90px] h-[70px] flex flex-col text-center justify-center"><Link to="/contactus">Contact us</Link></span>
                     </div>
                 </div>
             </div>

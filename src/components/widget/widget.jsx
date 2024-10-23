@@ -5,10 +5,10 @@ export default function Widget () {
     return (
         <>
             <div className="w-full mt-[50px] bg-[#FCFCFC] md:mt-0 md:w-[23%]">
-                <div className="text-[#d80c6c] font-semibold selection:bg-[#d80c6c] selection:text-white">
+                <div className="text-[#d80c6c] font-semibold  selection:text-white">
                     <ul>
                         <li className="py-[2px] hover:underline"><Link to="/submitpage">Submit Article</Link></li>
-                        <li className="py-[2px]"><a className="hover:underline" href="/">Submission Guide</a></li>
+                        <li className="py-[2px] hover:underline"><Link to="/submissionguide">Submission Guide</Link></li>
                         <li className="py-[2px]"><a className="hover:underline" href="/">Author's Guide</a></li>
                         <li className="py-[2px]"><a className="hover:underline" href="/">Plagiarism</a></li>
                         <li className="py-[2px]"><a className="hover:underline" href="/">Editorial Policy</a></li>
