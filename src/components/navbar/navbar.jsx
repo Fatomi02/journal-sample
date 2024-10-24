@@ -23,9 +23,9 @@ export default function Navbar () {
                         <a className="w-[90px] h-[70px] flex flex-col text-center link justify-center" href="/">About us</a>
                         <div className="bg-[#d80c6c] text-[14px] hidden sub_link w-[220px]">
                             <ul>
-                                <li className="py-3 pl-4"><a href="/">Editor in chief</a></li>
-                                <li className="py-3 pl-4"><a href="/">Editorial Board</a></li>
-                                <li className="py-3 pl-4"><a href="/">Peer Review</a></li>
+                                <li className="py-3 pl-4"><Link to="/">Editor in chief</Link></li>
+                                <li className="py-3 pl-4"><Link to="/editorial-in-board">Editorial Board</Link></li>
+                                <li className="py-3 pl-4"><Link to="/peer-review">Peer Review</Link></li>
                                 <li className="py-3 pl-4"><a href="/">Review's Guide</a></li>
                             </ul>
                         </div>
@@ -34,7 +34,7 @@ export default function Navbar () {
                         <a className="w-[90px] h-[70px] flex flex-col text-center justify-center" href="/">Policy</a>
                         <div className="bg-[#d80c6c] text-[14px] hidden sub_link w-[220px]">
                             <ul>
-                                <li className="py-3 pl-4"><a href="/">Open Access</a></li>
+                                <li className="py-3 pl-4"><Link to="/open-access-policy">Open Access</Link></li>
                                 <li className="py-3 pl-4"><Link to="/editorialpolicy">Editorial Policy</Link></li>
                                 <li className="py-3 pl-4"><Link to="/publicationethics">Publication Ethics</Link></li>
                                 <li className="py-3 pl-4"><Link to="/digitalarchive">Digital Archive</Link></li>
@@ -48,7 +48,7 @@ export default function Navbar () {
                         <div className="bg-[#d80c6c] hidden sub_link w-[220px]">
                             <ul>
                                 <li className="py-3 pl-4"><a href="/">Current</a></li>
-                                <li className="py-3 pl-4"><a href="/">Archive</a></li>
+                                <li className="py-3 pl-4"><Link to="/archive">Archive</Link></li>
                                 <li className="py-3 pl-4"><Link to="/authorsguide">Author's Guide</Link></li>
                                 <li className="py-3 pl-4"><Link to="/submissionguide">Submission Guide</Link></li>
                                 <li className="py-3 pl-4"><a href="/">Indexing</a></li>

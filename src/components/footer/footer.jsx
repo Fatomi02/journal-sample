@@ -8,15 +8,15 @@ export default function Footer () {
             <div className="xl:w-[64%] w-[90%] mt-[80px] text-start mx-auto flex flex-col md:flex-row mb-[30px] gap-[40px] xl:gap-[200px] pt-[60px] text-[14px]">
                 <div className="text-white  selection:text-white">
                     <ul>
-                        <li className="py-1 pl-4"><a className="hover:underline" href="/">Editor in chief</a></li>
-                        <li className="py-1 pl-4"><a className="hover:underline" href="/">Editorial Board</a></li>
-                        <li className="py-1 pl-4"><a className="hover:underline" href="/">Peer Review</a></li>
+                        <li className="py-1 pl-4 hover:underline"><Link to="/">Editor in chief</Link></li>
+                        <li className="py-1 pl-4 hover:underline"><Link to="/editorial-in-board">Editorial Board</Link></li>
+                        <li className="py-1 pl-4 hover:underline"><Link to="/peer-review">Peer Review</Link></li>
                         <li className="py-1 pl-4"><a className="hover:underline" href="/">Review's Guide</a></li>
                     </ul>
                 </div>
                 <div className="text-white  selection:text-white">
                     <ul>
-                        <li className="py-1 pl-4"><a className="hover:underline" href="/">Open Access</a></li>
+                        <li className="py-1 pl-4 hover:underline"><Link to="/open-access-policy">Open Access</Link></li>
                         <li className="py-1 pl-4 hover:underline"><Link to="/editorialpolicy">Editorial Policy</Link></li>
                         <li className="py-1 pl-4 hover:underline"><Link to="/publicationethics">Publication Ethics</Link></li>
                         <li className="py-1 pl-4 hover:underline"><Link to="/digitalarchive">Digital Archive</Link></li>
@@ -34,8 +34,8 @@ export default function Footer () {
                 <div className="text-white  selection:text-white">
                     <ul>
                         <li className="py-1 pl-4"><i><b>Contact us</b></i></li>
-                        <li className="py-1 pl-4">Email: <a className="hover:underline" href="mailto:">journal@gmail.com</a></li>
-                        <li className="py-1 pl-4">Phone: <a className="hover:underline" href="tel:">09061716060</a></li>
+                        <li className="py-1 pl-4">Email: <a className="hover:underline" href="mailto:ojonaolapo@lautech.edu.ng">ojonaolapo@lautech.edu.ng</a></li>
+                        <li className="py-1 pl-4">Phone: <a className="hover:underline" href="tel:+2349026346768">+234 9026346768</a></li>
                     </ul>
                 </div>
             </div>

@@ -24,19 +24,20 @@ export default function PublicationFee () {
                 </div>
                 <section className="2xl:w-[64%] mx-auto bg-[#FCFCFC] md:flex justify-between w-[86%] mt-[70px] mb-10">
                     <div className="w-full mx-auto md:w-[75%] text-justify text-[#626262] text-[14px] mt-[-36px] leading-7">
-                        <strong className="text-[#800000]">ARTICLE PROCESSING CHARGE</strong>
-                        <p className="text-[14px] leading-7">
-                            PAJOLS publishes all its journals in full open access under a Creative Commons (CC BY) license. This allows the scientific community and the general public to gain unlimited, free and immediate access to scholarly articles, and to reuse the content freely provided that proper attribution is given to the original authors.
+                        <strong className="text-[#800000]">Article Publishing Charge (APC)</strong>
+                        <p className="text-[14px] leading-7 my-4">
+                            As an open access journal with no subscription charges, a fee (Article Publishing Charge, APC) is payable by the authors, their institution or funders, to cover the costs associated with publication. This ensures your article will be immediately and permanently free to access by everyone.
                         </p>
-                        <p className="text-[14px] leading-7 my-6">To cover the cost for providing our high-quality publishing service and free access to readers, authors pay a one-time article processing charge (APC) of N50,000 (Fifty thousand naira only) for national authors and $200 (Two hundred dollars) for authors outside Nigeria for manuscripts accepted after peer-review. The major factor that will determine national or international author Is the corresponding author. </p>
-                        <p className="text-[14px] leading-7 mb-6">There are no charges for rejected articles, no submission charges, and no surcharges based on the length of an article, figures or supplementary data. Editorial items (Editorials, Corrections, Additions, Retractions, Letters, Comments, etc.) are published free of charge.</p>
 
-                        <strong className="text-[#800000] mb-2">APCs cover the following:</strong>
-                        <ul className="list-disc flex flex-col gap-3 pl-[30px] md:pl-[40px]">
-                            <li>The editorial procedure, including administration related to peer review, author revisions, and final decision-making. PAJOLS make use of in-house staff to manage the majority of this process, leaving editorial board members to make key scientific decisions and allowing them to concentrate on their research.</li>
-                            <li>Article production: Language editing, type-setting, formatting, and production in PDF,</li>
-                            <li>Article hosting and dissemination: website maintenance, contact with indexing databases.</li>
-                            <li>Journal administration: including managing the journal website and editorial board, and promotion of the journal among the research community.</li>
+                        <strong className="text-[#800000] my-4">The Article Publishing Charge for this journal is:</strong>
+                        <ul className="flex flex-col gap-3 pl-[30px] md:pl-[40px] my-4 list-decimal">
+                            <li>
+                                N40,000 (Fifty thousand naira only) for national authors and $150 (One hundred dollars for authors outside Nigeria only) for manuscripts accepted after peer-review.                            
+                            </li>
+                            <strong className="text-[#800000]">Discounts and waivers</strong>
+                            <p className="text-[14px] leading-6">
+                            Authors are eligible for discount and waivers provided they produce evidence they are unable to pay APC
+                            </p>
                         </ul>
                     </div>
                     <Widget />

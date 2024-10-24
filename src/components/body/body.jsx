@@ -5,6 +5,7 @@ import access from '../../assets/images/Open access.jpg'
 import ethics from '../../assets/images/ethics.jpg'
 import manuscript from '../../assets/images/submission.jpg'
 import Widget from "../widget/widget";
+import License from '../../assets/images/license.png'
 
 
 export default function Body () {
@@ -48,9 +49,14 @@ export default function Body () {
 
                 <h2 className="text-[18px] md:text-[32px] text-[#d80c6c]  selection:text-white font-bold mb-[15px]">WHY PUBLISH WITH US</h2>
                 <ul className="text-[14px] md:text-[14px] list-disc flex flex-col gap-[15px]  selection:text-white pl-[30px]">
-                    <li>EUser friendly Manuscript submission system</li>
+                    <li>User friendly Manuscript submission system</li>
                     <li>Prompt and Concise Editorial Review </li>
-                    <li>Thorough peer review process</li>
+                    <li>Rigorous and transparent peer review process</li>
+                    <li>Rapid publication with accurate double-blinded peer review process</li>
+                    <li>Articles are published in their final form within 3-5 working days after the acceptance by the handling editor.</li>
+                    <li>Immediate visibility for research output once the article is published.</li>
+                    <li>Accelerated discovery with open access.</li>
+                    <li>Authors retain the copyright to their works for unlimited and unrestricted access.</li>
                 </ul>
 
                 <div className="md:flex-row flex flex-col gap-[30px] w-[96%] md:w-full mt-[40px] mx-auto">
@@ -82,7 +88,7 @@ export default function Body () {
 
                 <div className="text-[24px] mt-[30px] text-white w-full py-2 bg-[#d80c6c] flex justify-center mb-[20px]">Creative Commons</div>
 
-                <span className="text-[14px] leading-6 md:text-[14px]  selection:text-white md:leading-9">Creative Commons provides option to choose which rights one want to control and want to grant to others with respect to ones publication. They do not replace copyright, but are based upon it. The publications here are licensed under a <a className="text-[#d80c6c]" href="/">Creative Commons Attribution 4.0 International License.</a></span>
+                <span className="text-[14px] leading-6 md:text-[14px]  selection:text-white md:leading-9">Creative Commons licenses give a standardized format for granting the public permission for use of creative works under copyright law. All articles published by <strong>Acta BioScientia</strong> are licensed under a <a className="text-[#d80c6c]" href="/">Creative Commons Attribution 4.0 International License.</a><img className="inline-block" src={License} alt="" /></span>
 
             </div>
             <Widget />

@@ -10,9 +10,9 @@ export default function Widget () {
                         <li className="py-[2px] hover:underline"><Link to="/submitpage">Submit Article</Link></li>
                         <li className="py-[2px] hover:underline"><Link to="/submissionguide">Submission Guide</Link></li>
                         <li className="py-[2px]"><a className="hover:underline" href="/">Author's Guide</a></li>
-                        <li className="py-[2px]"><a className="hover:underline" href="/">Plagiarism</a></li>
-                        <li className="py-[2px]"><a className="hover:underline" href="/">Editorial Policy</a></li>
-                        <li className="py-[2px]"><a className="hover:underline" href="/">Publication fee</a></li>
+                        <li className="py-[2px] hover:underline"><Link to="/plagiarism">Plagiarism</Link></li>
+                        <li className="py-[2px] hover:underline"><Link to="/editorialpolicy">Editorial Policy</Link></li>
+                        <li className="py-[2px] hover:underline"><Link to="/publicationfee">Publication fee</Link></li>
                     </ul>
                 </div>
 
