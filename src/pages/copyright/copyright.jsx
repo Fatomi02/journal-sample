@@ -28,10 +28,10 @@ export default function Copyright() {
                         <li>Copyright on any open access article in a journal published by PAJOLS is retained by the author(s).</li>
                         <li>Authors grant PAJOLS a license to publish the article and identify itself as the original publisher.</li>
                         <li>Authors also grant any third party the right to use the article freely as long as its integrity is maintained and its original authors, citation details, and publisher are identified.</li>
-                        <li>The Creative <a className="text-[#800000] font-medium" href="https://creativecommons.org/licenses/by/4.0/">Commons Attribution License 4.0</a> formalizes these and other terms and conditions of publishing articles.</li>
+                        <li>The Creative <a className="text-[#d80c6c] font-medium" href="https://creativecommons.org/licenses/by/4.0/">Commons Attribution License 4.0</a> formalizes these and other terms and conditions of publishing articles.</li>
                     </ul>
 
-                    <p className="text-[14px] leading-7 mt-4">Where an author is prevented from being the copyright holder (for instance in the case of US government employees or those of Commonwealth governments), minor variations may be required. Authors requiring a variation of this type should <a className="text-[#800000] font-medium" href="/">inform PAJOLS</a> during or immediately after submission of their article. Changes to the copyright line cannot be made after publication of an article.</p>
+                    <p className="text-[14px] leading-7 mt-4">Where an author is prevented from being the copyright holder (for instance in the case of US government employees or those of Commonwealth governments), minor variations may be required. Authors requiring a variation of this type should <a className="text-[#d80c6c] font-medium" href="/">inform PAJOLS</a> during or immediately after submission of their article. Changes to the copyright line cannot be made after publication of an article.</p>
                 </div>
                 <Widget />
             </section>

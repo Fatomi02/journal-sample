@@ -31,7 +31,7 @@ export default function EditorialInBoard() {
       </div>
       <section className="2xl:w-[64%] bg-[#FCFCFC] mx-auto md:flex justify-between w-[86%] mt-[70px] mb-10">
         <div className="w-full mx-auto md:w-[70%] text-justify text-[#626262] text-[14px] mt-[-36px] leading-7">
-          <strong className="text-[#800000] text-center">
+          <strong className="text-[#d80c6c] text-center">
             Editor in chief:
           </strong>
           <p className="text-[14px] my-4 leading-7">
@@ -39,14 +39,14 @@ export default function EditorialInBoard() {
             Reader, Department of Pharmacology and Therapeutics, LAUTECH,
             Ogbomoso
           </p>
-          <strong className="text-[#800000] text-center">
+          <strong className="text-[#d80c6c] text-center">
           Associate Editors:
           </strong>
           <ul className="text-[14px] my-4 leading-7 list-decimal pl-6">
             <li>Dr Joshua Falade (MBBS, FMCPsych, Ph.D), Department of Pharmacology, University of Medical Sciences, Ondo, Ondo State </li>
             <li>Dr Abiodun Abioye Oyeleke B. Sc. M.Sc. Ph.D, Department of Anatomy, Federal University Oye-Ekiti</li>
           </ul>
-          <strong className="text-[#800000] text-center">
+          <strong className="text-[#d80c6c] text-center">
           Editorial Assistants:
           </strong>
           <ul className="text-[14px] my-4 leading-7 list-decimal pl-6">
@@ -55,7 +55,7 @@ export default function EditorialInBoard() {
             <li>Opeyemi Ojo FAMUYIDE</li>
             <li>Boluwatife Mary OLADIPUPO</li>
           </ul>
-          <strong className="text-[#800000] text-center">
+          <strong className="text-[#d80c6c] text-center">
           Editorial Office:
           </strong>
           <p className="text-[14px] my-4 leading-7">

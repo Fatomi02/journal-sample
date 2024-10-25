@@ -38,7 +38,7 @@ export default function SubmissionGuide() {
             submission to the successful publication of your manuscript.
           </p>
 
-          <h4 className="text-[#800000] font-bold text-center my-3">
+          <h4 className="text-[#d80c6c] font-bold text-center my-3">
             Manuscript Submission
           </h4>
           <p className="text-[14px] leading-7">
@@ -54,14 +54,14 @@ export default function SubmissionGuide() {
               our online platform
             </p>
           </p>
-          <strong className="text-[#800000] text-center mb-3">
+          <strong className="text-[#d80c6c] text-center mb-3">
             Article Type
           </strong>
           <p className="text-[14px] leading-7">
             The Journal welcomes the submission of full-length research
             articles, review articles, thematic issues and short reports.{" "}
           </p>
-          <strong className="text-[#800000] text-center mb-3">
+          <strong className="text-[#d80c6c] text-center mb-3">
             Manuscript Preparation
           </strong>
           <p className="text-[14px] leading-7 mb-4">
@@ -72,12 +72,12 @@ export default function SubmissionGuide() {
             Methods, Results, Discussion, Conclusion, Acknowledgement, Conflict
             of Interest, Appendix and Reference.{" "}
           </p>
-          <strong className="text-[#800000] text-center mb-4">Title</strong>
+          <strong className="text-[#d80c6c] text-center mb-4">Title</strong>
           <p className="text-[14px] leading-7 mb-5">
             The title of the article should be brief, concise and informative.
             Word count should not exceed 20.{" "}
           </p>
-          <strong className="text-[#800000] text-center my-2">
+          <strong className="text-[#d80c6c] text-center my-2">
             Author Details
           </strong>
           <p className="text-[14px] leading-7">
@@ -87,19 +87,19 @@ export default function SubmissionGuide() {
             authors must be provided. Details of the corresponding author
             particularly the e-mail address should be clearly stated.
           </p>
-          <strong className="text-[#800000] text-center my-2">Abstract</strong>
+          <strong className="text-[#d80c6c] text-center my-2">Abstract</strong>
           <p className="text-[14px] leading-7">
             The abstract should not exceed 250 words. It should be written as a
             continuous paragraph and must include background of the research,
             methodology, results, and conclusions. Emphasis must be placed on
             the contributions to the current body of knowledge.
           </p>
-          <strong className="text-[#800000] text-center my-2">Keywords</strong>
+          <strong className="text-[#d80c6c] text-center my-2">Keywords</strong>
           <p className="text-[14px] leading-7">
             3-6 keywords that accurately reflect the theme of the manuscript
             should be included.{" "}
           </p>
-          <strong className="text-[#800000] text-center my-2">
+          <strong className="text-[#d80c6c] text-center my-2">
             Introduction
           </strong>
           <p className="text-[14px] leading-7">
@@ -107,7 +107,7 @@ export default function SubmissionGuide() {
             of the research, including current body of knowledge of the subject
             area{" "}
           </p>
-          <strong className="text-[#800000] text-center my-2">
+          <strong className="text-[#d80c6c] text-center my-2">
             Materials and Methods
           </strong>
           <p className="text-[14px] leading-7">
@@ -115,7 +115,7 @@ export default function SubmissionGuide() {
             materials, experimental design and statistical tests used for data
             analysis etc.{" "}
           </p>
-          <strong className="text-[#800000] text-center my-2">
+          <strong className="text-[#d80c6c] text-center my-2">
             Discussion
           </strong>
           <p className="text-[14px] leading-7">
@@ -123,7 +123,7 @@ export default function SubmissionGuide() {
             data, also comparisons should be made with similar studies. The
             significance of findings should be clearly depicted.{" "}
           </p>
-          <strong className="text-[#800000] text-center my-2">
+          <strong className="text-[#d80c6c] text-center my-2">
             Conclusion
           </strong>
           <p className="text-[14px] leading-7">
@@ -131,14 +131,14 @@ export default function SubmissionGuide() {
             section would also include the contributions of the study to the
             body of knowledge{" "}
           </p>
-          <strong className="text-[#800000] text-center my-2">
+          <strong className="text-[#d80c6c] text-center my-2">
             Acknowledgement
           </strong>
           <p className="text-[14px] leading-7">
             All contributors who do not meet the criteria for authorship (as
             stated below) should be listed in the acknowledgements section.{" "}
           </p>
-          <strong className="text-[#800000] text-center my-2">
+          <strong className="text-[#d80c6c] text-center my-2">
             Declaration of conflict of interest{" "}
           </strong>
           <p className="text-[14px] leading-7">
@@ -147,24 +147,24 @@ export default function SubmissionGuide() {
             have no conflict, then they should state categorically that “The
             Author(s) declare(s) that there is no conflict of interest.”
           </p>
-          <strong className="text-[#800000] text-center my-2">
+          <strong className="text-[#d80c6c] text-center my-2">
             Funding
           </strong>
           <p className="text-[14px] leading-7">
             <strong>Acta BioScientia</strong> requires that all authors acknowledge completely their funding. If the authors did not receive any outside funding, then “This research received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors.” should be clearly stated in this section.
           </p>
-          <strong className="text-[#800000] text-center my-2">
+          <strong className="text-[#d80c6c] text-center my-2">
             References 
           </strong>
           <p className="text-[14px] leading-7">
             The Journal uses a numeric referencing style. This referencing style entails that each source is numbered according to the order of appearance in the text. This numbers are retained for the same source anytime they appear again in the text. The reference list is then a single numbered list of citations with full details. All in text references are expected to be numbered in square brackets. 
           </p>
-          <strong className="text-[#800000] text-center my-2">
+          <strong className="text-[#d80c6c] text-center my-2">
             Reference Format
           </strong>
           <p className="text-[14px] leading-7">
             The NLM reference list format is used by this journal. Minimum information required for journal article reference include author (s) surname, initials (without punctuation mark) , abbreviated journal title, year of publication, volume number, and page number. All authors should be cited. Journal abbreviations should follow the Index Medicus or MEDLINE.          </p>
-          <strong className="text-[#800000] text-center my-2">
+          <strong className="text-[#d80c6c] text-center my-2">
             References 
           </strong>
           <p className="text-[14px] leading-7">

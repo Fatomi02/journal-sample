@@ -24,17 +24,17 @@ export default function PublicationFee () {
                 </div>
                 <section className="2xl:w-[64%] mx-auto bg-[#FCFCFC] md:flex justify-between w-[86%] mt-[70px] mb-10">
                     <div className="w-full mx-auto md:w-[75%] text-justify text-[#626262] text-[14px] mt-[-36px] leading-7">
-                        <strong className="text-[#800000]">Article Publishing Charge (APC)</strong>
+                        <strong className="text-[#d80c6c]">Article Publishing Charge (APC)</strong>
                         <p className="text-[14px] leading-7 my-4">
                             As an open access journal with no subscription charges, a fee (Article Publishing Charge, APC) is payable by the authors, their institution or funders, to cover the costs associated with publication. This ensures your article will be immediately and permanently free to access by everyone.
                         </p>
 
-                        <strong className="text-[#800000] my-4">The Article Publishing Charge for this journal is:</strong>
+                        <strong className="text-[#d80c6c] my-4">The Article Publishing Charge for this journal is:</strong>
                         <ul className="flex flex-col gap-3 pl-[30px] md:pl-[40px] my-4 list-decimal">
                             <li>
                                 N40,000 (Fifty thousand naira only) for national authors and $150 (One hundred dollars for authors outside Nigeria only) for manuscripts accepted after peer-review.                            
                             </li>
-                            <strong className="text-[#800000]">Discounts and waivers</strong>
+                            <strong className="text-[#d80c6c]">Discounts and waivers</strong>
                             <p className="text-[14px] leading-6">
                             Authors are eligible for discount and waivers provided they produce evidence they are unable to pay APC
                             </p>
