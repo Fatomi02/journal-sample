@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import Navbar from "../../components/navbar/navbar";
 import { Link, Outlet } from "react-router-dom";
 import Widget from "../../components/widget/widget";
@@ -6,6 +6,8 @@ import './submitPage.css'
 import Footer from "../../components/footer/footer";
 
 export default function SubmitPage() {
+
+  const [error,setError] = useState(false)
   useEffect(() => {
     // Scroll to top on component mount
     window.scrollTo(0, 0);
@@ -80,13 +82,44 @@ export default function SubmitPage() {
       tableFigureError.style.display = "block";
       tableFigure.classList.add("border-red-500");
     }
+
+ 
   }
 
   const removeError = (inputId, errorId) => {
     let id = document.getElementById(inputId);
     let error = document.getElementById(errorId);
     error.style.display = "none";
-    id.classList.remove("border-red-500");
+    id.classList.remove("bofrder-red-500");
+  }
+
+  const handleSubmit = async (ev) => {
+    ev.preventDefault();  
+    checkValidation()
+    try {
+            const formData = new FormData(ev.currentTarget);
+      const entr = Object.fromEntries(formData)
+      console.log(entr)
+           const postReq = await fetch(
+             "https://test.bigchiefstores.com/api/submit.php",
+             {
+               method: "POST",
+               body: formData,
+             }
+           );
+           if (!postReq.ok) {
+             setError(true);
+           }
+           const resp = await postReq.json();
+           if (!resp.status) {
+              setError(true)
+            }
+           console.log(resp.status);
+            ev.currentTarget.reset()
+         } catch (error) {
+           setError(true)
+         }
+
   }
 
   return (
@@ -114,7 +147,7 @@ export default function SubmitPage() {
             <h2 className="text-[30px] tracking-normal text-[#161922] font-light leading-8">
               Author Information
             </h2>
-            <form id="form" action="">
+            <form id="form"  onSubmit={handleSubmit}>
             <div class="inner-name-box">
               <label for="first-name" class="label">
                 First Name <span class="asterisk">*</span>
@@ -241,7 +274,8 @@ export default function SubmitPage() {
               </label>
               <input type="file" id="additional-files" name="additional-files" />
             </div>
-            <button type="submit" onClick={checkValidation} className="text-white py-3 px-2 bg-[#d80c6c] w-[80px] rounded-lg">Send</button>
+              <button type="submit" className="text-white py-3 px-2 bg-[#d80c6c] w-[80px] rounded-lg">Send</button>
+              {error && <div>An error occured</div>}
           </form>
           </div>
         </div>
