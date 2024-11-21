@@ -41,7 +41,7 @@ export default function Footer () {
             </div>
 
             <span>Copyright reserved © Acta BioScientia </span> <br />
-            <span>Powered by Olaitan</span>
+            <span>Powered by Optimus_Prime_Technologies</span>
 
         </section>
         <Outlet />

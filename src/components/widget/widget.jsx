@@ -16,12 +16,9 @@ export default function Widget () {
                     </ul>
                 </div>
 
-                <button className="w-full py-3 bg-[#007dc2] text-[18px] text-white mt-[50px] mb-[20px]">Search</button>
-                <input type="search" className="w-full px-3 py-2 outline-none border-[4px] border-[#f6f6f6] focus:bg-[#d1e4f0]" placeholder="Enter your search" />
+                {/* <button className="w-full py-3 bg-[#e67817] text-[18px] text-white mt-[50px] mb-[40px]">Archive</button> */}
 
-                <button className="w-full py-3 bg-[#e67817] text-[18px] text-white mt-[50px] mb-[40px]">Archive</button>
-
-                <div className="flex flex-col gap-4 text-[#d80c6c]">
+                {/* <div className="flex flex-col gap-4 text-[#d80c6c]">
                     <div>
                         <label className="font-semibold">Volume 8 (2024)</label>
                         <div className="w-full bg-[rgba(0,0,0,.03)]">
@@ -50,11 +47,11 @@ export default function Widget () {
                         </div>
                     </div>
 
-                </div>
+                </div> */}
 
-                <div className="mt-14">
+                {/* <div className="mt-14">
                     <span className="text-[#626262]">... click <a href="/" className="text-[#d80c6c] hover:underline">here</a> for more</span>
-                </div>
+                </div> */}
 
             </div>
             <Outlet />

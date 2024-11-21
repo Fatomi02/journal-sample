@@ -11,13 +11,12 @@ export default function Navbar () {
                     <img className="h-[130px] w-[125px] lg:h-[150px] md:mt-[15px] xl:mt-0 md:w-[135px] mx-[20px]" src={logo} alt="Logo" />
                     <div className="pl-4 xl:w-[800px] hidden md:block">
                         <h1 className="text-[28px] lg:text-[30px] xxl:text-[36px]  lg:leading-[40px] mb-3 text-[#d80c6c]">Acta BioScientia</h1>
-                        <span className="font-medium text-[#d80c6c]"><i className="text-[14px] lg:text-[16px]">A publication of Faculty of Basic Medical Sciences and Faculty of Basic Clinical Sciences,
-                        Ladoke Akintola University of Technology, Ogbomoso</i></span>
+                        <span className="font-medium text-[#d80c6c]"><i className="text-[14px] lg:text-[16px]">Journal of Biomedical and Biological Sciences</i></span>
                     </div>
                 </div>
             </nav>
             <div className="nav-links-div">
-                <div className="xl:w-[64%] hidden w-[full] lg:[80%] md:flex justify-center gap-4 mx-auto text-white">
+                <div className="hidden w-[full] md:flex justify-center gap-4 text-white">
                     <div className="active"><Link className="w-[90px] h-[70px] flex flex-col text-center justify-center" to="/">Home</Link></div>
                     <div className="hover">
                         <a className="w-[90px] h-[70px] flex flex-col text-center link justify-center" href="/">About us</a>
@@ -59,6 +58,10 @@ export default function Navbar () {
                     <div className="hover">
                         <span className="w-[90px] h-[70px] flex flex-col text-center justify-center"><Link to="/contactus">Contact us</Link></span>
                     </div>
+                </div>
+                <div className="flex items-center gap-4">
+                    <input type="search" className="px-3 py-1 outline-none border-[4px] rounded-md border-[#f6f6f6] focus:bg-[#d1e4f0]" placeholder="Enter your search" />
+                    <button className="py-3 px-4 bg-[#e67817] text-white rounded-md">Search</button>
                 </div>
             </div>
         </section>

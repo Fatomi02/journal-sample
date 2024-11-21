@@ -7,6 +7,7 @@ import ethics from "../../assets/images/publication-ethics.jpg";
 import manuscript from "../../assets/images/manuscript_submission.jpg";
 import Widget from "../widget/widget";
 import License from "../../assets/images/license.png";
+import './body.css'
 
 export default function Body() {
   return (
@@ -129,8 +130,8 @@ export default function Body() {
           </ul>
 
           <div className="md:flex-row flex flex-col gap-[30px] w-[96%] md:w-full mt-[40px] mx-auto">
-            <div className="w-full md:w-[320px] mx-auto">
-              <img className="w-full h-[220px]" src={access} alt="" />
+            <div className="w-full overflow-hidden md:w-[320px] mx-auto">
+              <img className="w-full h-[220px] zoom-image" src={access} alt="" />
               <div className="mt-[20px] flex flex-col gap-[15px]">
                 <span className="text-[24px] text-[#e67817] font-medium  selection:text-white">
                   Open Access
@@ -144,8 +145,8 @@ export default function Body() {
                 </button>
               </div>
             </div>
-            <div className="w-full md:w-[320px] mx-auto">
-              <img className="w-full h-[220px]" src={ethics} alt="" />
+            <div className="w-full overflow-hidden md:w-[320px] mx-auto">
+              <img className="w-full h-[220px] zoom-image" src={ethics} alt="" />
               <div className="mt-[20px] flex flex-col gap-[15px]">
                 <span className="text-[24px] text-[#00923f] font-medium  selection:text-white">
                   Publication Ethics
@@ -160,8 +161,8 @@ export default function Body() {
                 </button>
               </div>
             </div>
-            <div className="w-full md:w-[320px] mx-auto">
-              <img className="w-full h-[220px]" src={manuscript} alt="" />
+            <div className="w-full overflow-hidden md:w-[320px] mx-auto">
+              <img className="w-full h-[220px] zoom-image" src={manuscript} alt="" />
               <div className="mt-[20px] flex flex-col gap-[15px]">
                 <span className="text-[24px] text-[#007dc2] font-medium  selection:text-white">
                   Submission

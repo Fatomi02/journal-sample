@@ -1,12 +1,8 @@
-.index {
-    position: absolute;
-    z-index: -10;
-}
-
-span {
-    font-weight: 400;
-}
-
-.list-disc {
-    color: #626262;
-}
+.zoom-image {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .zoom-image:hover {
+    transform: scale(1.2);
+  }
