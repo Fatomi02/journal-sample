@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import banner from "../../assets/images/bioscientia_banner.jpg";
 import Aim from "../../assets/images/aim.jpg";
 import Scope from "../../assets/images/scope.jpg";
@@ -10,6 +11,10 @@ import License from "../../assets/images/license.png";
 import './body.css'
 
 export default function Body() {
+  const navigate = useNavigate();
+  const route = (url) => {
+    navigate(url);
+  }
   return (
     <>
       <section className="2xl:w-[64%] w-[86%] mt-[280px] relative z-0 mx-auto md:flex justify-between mb-10">
@@ -140,7 +145,7 @@ export default function Body() {
                   The basic idea of open access is to make copyright-able works
                   available without all
                 </span>
-                <button className="bg-[#e67817] py-3 hover:text-[#626262] px-5 text-center w-full text-[white]">
+                <button onClick={()=> route('/open-access-policy')} className="bg-[#e67817] py-3 hover:text-[#626262] px-5 text-center w-full text-[white]">
                   Read more
                 </button>
               </div>
@@ -156,7 +161,7 @@ export default function Body() {
                   publishing ethics, with rigorous processes in place to ensure
                   this is achieved
                 </span>
-                <button className="bg-[#00923f] py-3 px-5 text-center hover:text-[#626262] w-full text-[white]">
+                <button onClick={()=> route('/publicationethics')} className="bg-[#00923f] py-3 px-5 text-center hover:text-[#626262] w-full text-[white]">
                   Read more
                 </button>
               </div>
@@ -171,7 +176,7 @@ export default function Body() {
                   The basic idea of open access is to make copyright-able works
                   available without all
                 </span>
-                <button className="bg-[#007dc2] py-3 px-5 text-center hover:text-[#626262] w-full text-[white]">
+                <button onClick={()=> route('/submissionguide')} className="bg-[#007dc2] py-3 px-5 text-center hover:text-[#626262] w-full text-[white]">
                   Read more
                 </button>
               </div>
