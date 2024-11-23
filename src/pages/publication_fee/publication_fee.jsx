@@ -32,7 +32,7 @@ export default function PublicationFee () {
                         <strong className="text-[#d80c6c] my-4">The Article Publishing Charge for this journal is:</strong>
                         <ul className="flex flex-col gap-3 pl-[30px] md:pl-[40px] my-4 list-decimal">
                             <li>
-                                N40,000 (Fifty thousand naira only) for national authors and $150 (One hundred dollars for authors outside Nigeria only) for manuscripts accepted after peer-review.                            
+                                N50,000 (Fifty thousand naira only) for national authors and $150 (One hundred dollars for authors outside Nigeria only) for manuscripts accepted after peer-review.                            
                             </li>
                             <strong className="text-[#d80c6c]">Discounts and waivers</strong>
                             <p className="text-[14px] leading-6">
