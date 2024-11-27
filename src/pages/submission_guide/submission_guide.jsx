@@ -31,7 +31,7 @@ export default function SubmissionGuide() {
       <section className="2xl:w-[64%] bg-[#FCFCFC] mx-auto md:flex w-[86%] mt-[70px] mb-10">
         <div className="w-full md:w-[75%] text-justify text-[#626262] text-[14px] mt-[-36px] leading-7">
           <p className="text-[14px] leading-7">
-            Acta BioScientia is an open access journal that covers a wide range
+            <b>Acta BioScientia</b> is an open access journal that covers a wide range
             of academic disciplines. Prior to manuscript submission, please read
             carefully and adhere to the instructions in the submission
             guidelines. This would ensure that a seamless process from
@@ -42,13 +42,20 @@ export default function SubmissionGuide() {
             Manuscript Submission
           </h4>
           <p className="text-[14px] leading-7">
-            Acta BioScientia accepts manuscripts prepared in the following
-            formats: Microsoft Word (2007 and above) submitted via{" "}
+            <strong>Acta BioScientia</strong> accepts manuscripts prepared in
+            the following formats: Microsoft Word (2007 and above) submitted via{" "}
             <a className="text-blue-700" href="/home">
               the Journal Website.
             </a>{" "}
             If the online submission proves difficult due to technical issues,
-            manuscripts can be submitted via email at ___________. <br />
+            manuscripts can be submitted via email at{" "}
+            <a
+              className="text-blue-700"
+              href="mailto:actabioscientia@gmail.com"
+            >
+              Actabioscientia@gmail.com
+            </a>
+            . <br />
             <p className="my-2">
               Full text, including Figures and Tables should be submitted via
               our online platform
@@ -67,15 +74,15 @@ export default function SubmissionGuide() {
           <p className="text-[14px] leading-7 mb-4">
             All Manuscripts submitted to this journal must be written in
             English. Manuscript length should be at least 3000 words but not
-            more than 10000 words ( references included). The main text should
-            be divided into sections, including Introduction, Materials and
+            more than 10000 words (references included). The main text should be
+            divided into sections, including Introduction, Materials and
             Methods, Results, Discussion, Conclusion, Acknowledgement, Conflict
             of Interest, Appendix and Reference.{" "}
           </p>
           <strong className="text-[#d80c6c] text-center mb-4">Title</strong>
           <p className="text-[14px] leading-7 mb-5">
             The title of the article should be brief, concise and informative.
-            Word count should not exceed 20.{" "}
+            Word count should not exceed 21.{" "}
           </p>
           <strong className="text-[#d80c6c] text-center my-2">
             Author Details
@@ -96,7 +103,7 @@ export default function SubmissionGuide() {
           </p>
           <strong className="text-[#d80c6c] text-center my-2">Keywords</strong>
           <p className="text-[14px] leading-7">
-            3-6 keywords that accurately reflect the theme of the manuscript
+            3-5 keywords that accurately reflect the theme of the manuscript
             should be included.{" "}
           </p>
           <strong className="text-[#d80c6c] text-center my-2">
@@ -115,13 +122,18 @@ export default function SubmissionGuide() {
             materials, experimental design and statistical tests used for data
             analysis etc.{" "}
           </p>
+          <strong className="text-[#d80c6c] text-center my-2">Results</strong>
+          <p className="text-[14px] leading-7">
+            Data should be presented clearly and objectively. Where appropriate,
+            figures and tables should be used.
+          </p>
           <strong className="text-[#d80c6c] text-center my-2">
             Discussion
           </strong>
           <p className="text-[14px] leading-7">
             Manuscripts should have accurate unbiased interpretation of result
             data, also comparisons should be made with similar studies. The
-            significance of findings should be clearly depicted.{" "}
+            significance of findings should be clearly depicted.
           </p>
           <strong className="text-[#d80c6c] text-center my-2">
             Conclusion
@@ -147,38 +159,45 @@ export default function SubmissionGuide() {
             have no conflict, then they should state categorically that “The
             Author(s) declare(s) that there is no conflict of interest.”
           </p>
-          <strong className="text-[#d80c6c] text-center my-2">
-            Funding
-          </strong>
+          <strong className="text-[#d80c6c] text-center my-2">Funding</strong>
           <p className="text-[14px] leading-7">
-            <strong>Acta BioScientia</strong> requires that all authors acknowledge completely their funding. If the authors did not receive any outside funding, then “This research received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors.” should be clearly stated in this section.
+            <strong>Acta BioScientia</strong> requires that all authors
+            acknowledge completely their funding. If the authors did not receive
+            any outside funding, then “This research received no specific grant
+            from any funding agency in the public, commercial, or not-for-profit
+            sectors.” should be clearly stated in this section.
           </p>
           <strong className="text-[#d80c6c] text-center my-2">
-            References 
+            References
           </strong>
           <p className="text-[14px] leading-7">
-            The Journal uses a numeric referencing style. This referencing style entails that each source is numbered according to the order of appearance in the text. This numbers are retained for the same source anytime they appear again in the text. The reference list is then a single numbered list of citations with full details. All in text references are expected to be numbered in square brackets. 
+            The Journal uses a numeric referencing style. This referencing style
+            entails that each source is numbered according to the order of
+            appearance in the text. This numbers are retained for the same
+            source anytime they appear again in the text. The reference list is
+            then a single numbered list of citations with full details. All in-text references are expected to be numbered in square brackets. 
           </p>
           <strong className="text-[#d80c6c] text-center my-2">
             Reference Format
           </strong>
           <p className="text-[14px] leading-7">
-            The NLM reference list format is used by this journal. Minimum information required for journal article reference include author (s) surname, initials (without punctuation mark) , abbreviated journal title, year of publication, volume number, and page number. All authors should be cited. Journal abbreviations should follow the Index Medicus or MEDLINE.          </p>
-          <strong className="text-[#d80c6c] text-center my-2">
-            References 
-          </strong>
-          <p className="text-[14px] leading-7">
-            The Journal uses a numeric referencing style. This referencing style entails that each source is numbered according to the order of appearance in the text. This numbers are retained for the same source anytime they appear again in the text. The reference list is then a single numbered list of citations with full details. All in text references are expected to be numbered in square brackets. 
+          The NLM/Vancouver reference list format is used by this journal. Minimum
+            information required for journal article reference include author
+            (s) surname, initials (without punctuation mark) , abbreviated
+            journal title, year of publication, volume number, and page number.
+            All authors should be cited. Journal abbreviations should follow the
+            Index Medicus or MEDLINE format.
           </p>
           <div className="mt-4 flex flex-col gap-1">
             <p className="text-[14px] leading-7">
-            <b>Journal article:</b> Onaolapo AY, Ojo FO, Adeleye OO, Falade J, Onaolapo OJ. iDabetes Mellitus and Energy Dysmetabolism in Alzheimer's Disease: Understanding the Relationships and Potential Therapeutic Targets. Curr Diabetes Rev. 2023;19(8):e020123212333.
+              <b className="text-[#d80c6c]">Journal article:</b> Onaolapo AY, Ojo FO, Adeleye OO, Falade J, Onaolapo OJ. Diabetes Mellitus and Energy Dysmetabolism in Alzheimer's Disease: Understanding the Relationships and Potential Therapeutic Targets. Curr Diabetes Rev. 2023;19(8)e020123212333. 
             </p>
             <p className="text-[14px] leading-7">
-                <b>Accepted Article:</b> For articles that have been accepted but yet to be published referencing style is same as above however “In press” replaces page numbers.
+              <b className="text-[#d80c6c]">Accepted Article:</b> For articles that have been accepted but yet to be published, referencing style is same as above however “In press” replaces page numbers
             </p>
             <p className="text-[14px] leading-7">
-                <b>Book:</b> Gopi S, Balakrishnan P Handbook of Nutraceuticals and Natural Products, 1st ed.; Wiley & Sons: New York, 2022.            </p>
+              <b className="text-[#d80c6c]">Book:</b> Gopi S, Balakrishnan P Handbook of Nutraceuticals and Natural Products, 1st ed.; Wiley & Sons: New York, 2022.
+            </p>
           </div>
         </div>
       </section>

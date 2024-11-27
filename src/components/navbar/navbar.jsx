@@ -38,7 +38,7 @@ export default function Navbar () {
                                 <li className="py-3 pl-4"><Link to="/publicationethics">Publication Ethics</Link></li>
                                 <li className="py-3 pl-4"><Link to="/digitalarchive">Digital Archive</Link></li>
                                 <li className="py-3 pl-4"><Link to="/plagiarism">Plagiarism Policy</Link></li>
-                                <li className="py-3 pl-4"><Link href="/copyright">Copyright</Link></li>
+                                <li className="py-3 pl-4"><Link to="/copyright">Copyright</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -48,9 +48,8 @@ export default function Navbar () {
                             <ul>
                                 <li className="py-3 pl-4"><a href="/">Current</a></li>
                                 <li className="py-3 pl-4"><Link to="/archive">Archive</Link></li>
-                                <li className="py-3 pl-4"><Link to="/authorsguide">Author's Guide</Link></li>
                                 <li className="py-3 pl-4"><Link to="/submissionguide">Submission Guide</Link></li>
-                                <li className="py-3 pl-4"><a href="/">Indexing</a></li>
+                                <li className="py-3 pl-4"><a href="/indexing">Indexing</a></li>
                                 <li className="py-3 pl-4"><Link to="/publicationfee">Publication fee</Link></li>
                             </ul>
                         </div>

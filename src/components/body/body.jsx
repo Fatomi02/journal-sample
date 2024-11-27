@@ -33,21 +33,12 @@ export default function Body() {
                   Acta BioScientia: Journal of Biomedical and Biological
                   Sciences
                 </strong>{" "}
-                is a Biomedical Science Journal of the Behavioural Neuroscience
-                Research Group, Ladoke Akintola University of Technology (Print
-                ISSN-------- and Online ISSN----------) that is domiciled in the
-                Department of Pharmacology and Therapeutics, Clinical Sciences
-                Building, College of Health Sciences, Ladoke Akintola University
-                of Technology.{" "}
+                is a Biomedical Science Journal of the Behavioural Neuroscience Research Group, Ladoke Akintola University of Technology that is domiciled in the Department of Pharmacology and Therapeutics, Clinical Sciences Building, College of Health Sciences, Ladoke Akintola University of Technology, Ogbomoso Nigeria. 
               </span>
             </p>
             <p className="text-justify text-[14px]  selection:text-white text-[#626262]  leading-[28px] mb-[10px]">
               <span>
-                <strong>Acta BioScientia</strong> is a Multidisciplinary
-                Open-access, Peer-reviewed Journal which publishes full-length,
-                original research articles, reviews, preliminary communications
-                and letters to the editor that fall within the general scope of
-                Biomedical and Biological Sciences.{" "}
+                <strong>Acta BioScientia</strong> is a Multidisciplinary Open-access, Peer-reviewed Journal which publishes full-length original research articles, reviews, preliminary communications and letters to the editor that fall within the general scope of Biomedical and Biological Sciences.
               </span>
             </p>
             <p className="text-justify text-[14px]  selection:text-white text-[#626262]  leading-[28px] mb-[30px]">
@@ -70,12 +61,7 @@ export default function Body() {
                   </span>
                   <p className="text-justify flex flex-col gap-3 mt-[10px] md:mt-0 text-[14px] xl:text-[14px]  selection:text-white text-[#626262] mb-[20px] leading-[28px]">
                     <span>
-                      The aim of <strong>Acta BioScientia</strong> is to enhance
-                      the publication of biomedical and biological science
-                      research data by researchers from resource-poor and
-                      developing economies; whilst also elevating our
-                      understanding of the unique challenges that are faced by
-                      researchers from these communities.
+                      The aim of <strong>Acta BioScientia</strong> is to enhance the publication of biomedical and biological science research data by researchers from resource-poor and developing economies; whilst also elevating our understanding of the unique challenges that are faced by researchers from these communities.
                     </span>
                   </p>
                 </div>
@@ -87,20 +73,7 @@ export default function Body() {
                   </span>
                   <p className="text-justify flex flex-col gap-3 mt-[10px] md:mt-0 text-[14px] xl:text-[14px]  selection:text-white text-[#626262] mb-[10px] leading-[28px]">
                     <span>
-                      <strong>Acta BioScientia</strong> is an institutional
-                      Journal that is published Thrice annually and provides
-                      readers with an array of titles that include{" "}
-                      <b>original reports</b> that address current and trending
-                      research in the Biomedical and Biological Science
-                      research, <b>review articles</b> (written by experts and
-                      early career researchers) addressing topics of general
-                      interest and importance, <b>short reports</b> (including
-                      case reports, commentaries, editorials, conference
-                      proceedings) and <b>letter to the editor</b> which project
-                      burning issues. Privilege is given to{" "}
-                      <b>invited reviews</b> and <b>perspective papers.</b> The
-                      Journal is committed to a prompt review process with
-                      timely publication of all accepted manuscripts.{" "}
+                      <strong>Acta BioScientia</strong> is a Journal that is published thrice annually and provides readers with an array of titles that include <b>original reports</b> that address current and trending research in the Biomedical and Biological Sciences; <b>review articles</b> (written by experts and early career researchers) addressing topics of general interest and importance; <b>short reports</b> including case reports, commentaries, editorials and conference proceedings and also <b>letter to the editor</b> which project burning issues. Privilege is given to <b>invited reviews</b> and <b>perspective papers.</b> The Journal is committed to a prompt review process with timely publication of all accepted manuscripts. 
                     </span>
                   </p>
                 </div>
@@ -121,7 +94,7 @@ export default function Body() {
             </li>
             <li>
               Articles are published in their final form within 3-5 working days
-              after the acceptance by the handling editor.
+              after the acceptance.
             </li>
             <li>
               Immediate visibility for research output once the article is
@@ -142,8 +115,7 @@ export default function Body() {
                   Open Access
                 </span>
                 <span className=" text-[18px] leading-7 text-[#626262] selection:text-white">
-                  The basic idea of open access is to make copyright-able works
-                  available without all
+                The basic idea of open access publishing is to allow unrestricted access to published work.
                 </span>
                 <button onClick={()=> route('/open-access-policy')} className="bg-[#e67817] py-3 hover:text-[#626262] px-5 text-center w-full text-[white]">
                   Read more
@@ -157,9 +129,7 @@ export default function Body() {
                   Publication Ethics
                 </span>
                 <span className=" text-[18px] leading-7 text-[#626262] selection:text-white">
-                  Acta BioScientia adheres to the highest standards of
-                  publishing ethics, with rigorous processes in place to ensure
-                  this is achieved
+                Acta BioScientia holds itself to the highest standards of publication ethics. 
                 </span>
                 <button onClick={()=> route('/publicationethics')} className="bg-[#00923f] py-3 px-5 text-center hover:text-[#626262] w-full text-[white]">
                   Read more
@@ -173,8 +143,7 @@ export default function Body() {
                   Submission
                 </span>
                 <span className=" text-[18px] leading-7 text-[#626262] selection:text-white">
-                  The basic idea of open access is to make copyright-able works
-                  available without all
+                Acta BioScientia has an online manuscript submission system
                 </span>
                 <button onClick={()=> route('/submissionguide')} className="bg-[#007dc2] py-3 px-5 text-center hover:text-[#626262] w-full text-[white]">
                   Read more

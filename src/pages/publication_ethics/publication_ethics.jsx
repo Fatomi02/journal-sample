@@ -31,13 +31,9 @@ export default function PublicationEthics() {
       </div>
       <section className="2xl:w-[64%] bg-[#FCFCFC] mx-auto md:flex justify-between w-[86%] mt-[70px] mb-10">
         <div className="w-full mx-auto md:w-[75%] text-justify text-[#626262] text-[14px] mt-[-36px] leading-7">
-          All manuscripts submitted to <strong>Acta BioScientia</strong> must
+          Manuscripts submitted to <strong>Acta BioScientia</strong> must
           report research works that have been carried out following accepted
-          protocols that fall within established ethical framework. If upon
-          submission there are reasons to belief that established protocols have
-          not been followed, the Editors would have no option but to reject the
-          manuscript and/or contact the author’s institution or ethics
-          committee.
+          protocols that fall within established ethical framework. If upon submission there are reasons to belief that established protocols have not been followed, the Editors reserve the right to reject the manuscript. 
           <ul className="text-[14px] my-4 flex flex-col gap-3 leading-7 pl-6">
             <li>
               <b>
@@ -54,9 +50,7 @@ export default function PublicationEthics() {
             </li>
             <li>
               <b>(b) Consent</b> <br />
-              Informed consent must be obtained from participants of research
-              involving human subjects, where applicable, copies of duly signed
-              informed consent forms should be attached to manuscripts{" "}
+              Informed consent must be obtained from participants of research involving human subjects. Where applicable, copies of duly signed informed consent forms should be attached to manuscripts.
             </li>
             <li>
               <b>(c) Research involving animals</b> <br />
@@ -76,7 +70,7 @@ export default function PublicationEthics() {
               >
                 https://arriveguidelines.org/
               </a>{" "}
-              must be used as a checklist. Editors reserve the right to request
+              . Editors reserve the right to request
               for the checklist and to reject submissions that do not adhere to
               these guidelines. Editors also reserve the right to reject
               submissions based on ethical or animal welfare concerns or if the

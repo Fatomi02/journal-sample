@@ -25,7 +25,7 @@ export default function Plagiarism () {
             </div>
             <section className="2xl:w-[64%] bg-[#FCFCFC] mx-auto md:flex justify-between w-[86%] mt-[70px] mb-10">
                 <div className="w-full mx-auto md:w-[75%] text-justify text-[#626262] text-[14px] mt-[-36px] leading-7">
-                    Authors are to ensure and be seen to have written and submitted only works that are entirely original; and if they have included in their manuscript works and or words of others ensure that this has been adequately and appropriately cited.
+                    Authors are to ensure and be seen to have written and submitted only works that are entirely original; and if they have included in their manuscript works and/or words of others, to ensure that this has been adequately and appropriately cited 
                 </div>
                 <Widget />
             </section>
