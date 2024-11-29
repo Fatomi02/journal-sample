@@ -20,11 +20,6 @@ export default function Footer() {
               <li className="py-1 pl-4 hover:underline">
                 <Link to="/peer-review">Peer Review</Link>
               </li>
-              <li className="py-1 pl-4">
-                <a className="hover:underline" href="/">
-                  Review's Guide
-                </a>
-              </li>
             </ul>
           </div>
           <div className="text-white  selection:text-white">
@@ -42,7 +37,7 @@ export default function Footer() {
                 <Link to="/digitalarchive">Digital Archive</Link>
               </li>
               <li className="py-1 pl-4 hover:underline">
-                <Link to="/copyright">Copyright</Link>
+                <a href="#copyright">Copyright</a>
               </li>
             </ul>
           </div>
@@ -53,9 +48,6 @@ export default function Footer() {
               </li>
               <li className="py-1 pl-4 hover:underline">
                 <Link to="/publicationfee">Publication fee</Link>
-              </li>
-              <li className="py-1 pl-4 hover:underline">
-                <Link to="/authorsguide">Author's Guide</Link>
               </li>
               <li className="py-1 pl-4 hover:underline">
                 <Link to="/submissionguide">Submission Guide</Link>
@@ -72,7 +64,7 @@ export default function Footer() {
               <li className="py-1 pl-4 flex items-center gap-3">
                 <a
                   className="hover:underline"
-                  href="mailto:ojonaolapo@lautech.edu.ng"
+                  href="mailto:actabioscientia@gmail.com"
                 >
                   <img height="24" width="24" src={mail} alt="mail" />
                 </a>

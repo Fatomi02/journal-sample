@@ -24,6 +24,11 @@ export default function DigitalArchive() {
             </div>
             <section className="2xl:w-[64%] bg-[#FCFCFC] mx-auto md:flex justify-between w-[86%] mt-[70px] mb-10">
                 <div className="w-full mx-auto md:w-[75%] text-justify text-[#626262] text-[14px] mt-[-36px] leading-7">
+                    <strong className="my-4">Volume 1 (2024)</strong>
+                    <ul className="flex flex-col gap-3 pl-[30px] md:pl-[40px] my-4">
+                        <li className="text-[#d80c6c] font-medium"><Link to="/">Issue 1</Link></li>
+                    </ul>
+                    <strong className="my-4">Coming soon</strong>
                 </div>
                 <Widget />
             </section>

@@ -83,7 +83,7 @@ export default function Body() {
           </div>
 
           <h2 className="text-[18px] md:text-[32px] text-[#d80c6c] mt-3 selection:text-white font-bold mb-[15px]">
-            WHY PUBLISH WITH US
+            WHY PUBLISH WITH US?
           </h2>
           <ul className="text-[14px] md:text-[14px] list-disc flex flex-col gap-[15px]  selection:text-white pl-[30px]">
             <li>User friendly Manuscript submission system</li>
@@ -152,7 +152,7 @@ export default function Body() {
             </div>
           </div>
 
-          <div className="text-[24px] mt-[30px] text-white w-full py-2 bg-[#d80c6c] flex justify-center mb-[20px]">
+          <div id="copyright" className="text-[24px] mt-[30px] text-white w-full py-2 bg-[#d80c6c] flex justify-center mb-[20px]">
             Creative Commons
           </div>
 

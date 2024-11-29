@@ -26,7 +26,7 @@ function App() {
         <Route path='/plagiarism' element={<Plagiarism/>} />
         <Route path='/publicationfee' element={<PublicationFee/>} />
         <Route path='/submissionguide' element={<SubmissionGuide />} />
-        <Route path='/copyright' element={<Copyright />} />
+        {/* <Route path='/copyright' element={<Copyright />} /> */}
         <Route path='/digitalarchive' element={<DigitalArchive />} />
         <Route path='/archive' element={<Archive />} />
         <Route path='/publicationethics' element={<PublicationEthics />} />
