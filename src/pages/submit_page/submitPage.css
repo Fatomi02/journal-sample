@@ -44,3 +44,99 @@ input[type="email"]:focus, textarea:focus {
     line-height: 20px;
     color: hsl(0, 66%, 54%);
   }
+
+  .success_flag {
+    width: 700px;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    color: white;
+    background-color: #f04b98;
+    position: fixed;
+    right: 4px;
+    top: 250px;
+    z-index: 9999;
+}
+  .error_flag {
+    width: 700px;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    color: white;
+    background-color: hsl(0, 66%, 54%);
+    position: fixed;
+    right: 4px;
+    top: 250px;
+    z-index: 9999;
+}
+.success_container {
+    display: flex;
+    align-items: start;
+    gap: 12px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.error_container {
+    display: flex;
+    align-items: start;
+    gap: 12px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+    .success_flag {
+        padding: 16px;
+        width: 404px;
+        right: 1px;
+        top: 250px;
+    }
+    .error_flag {
+        padding: 16px;
+        width: 404px;
+        right: 1px;
+        top: 250px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .success_flag {
+        padding: 12px;
+        width: 354px;
+        right: 1px;
+        top: 230px;
+    }
+
+    .success_container {
+        font-size: 14px;
+    }
+    .error_flag {
+        padding: 12px;
+        width: 354px;
+        right: 1px;
+        top: 230px;
+    }
+
+    .error_container {
+        font-size: 14px;
+    }
+
+    .p {
+        font-size: 12px;
+    }
+}

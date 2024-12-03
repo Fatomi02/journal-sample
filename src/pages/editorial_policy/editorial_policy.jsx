@@ -25,7 +25,7 @@ export default function EditorialPolicy() {
             <section className="2xl:w-[64%] bg-[#FCFCFC] mx-auto md:flex justify-between w-[86%] mt-[70px] mb-10">
                 <div className="w-full mx-auto md:w-[75%] text-justify text-[#626262] text-[14px] mt-[-36px] leading-7">
                 <p className="text-[14px] my-4 leading-7">
-                All manuscript submitted to <strong>Acta BioScientia</strong> must not have been published (either partly or as a whole) prior to submission; nether must it be under consideration for publication elsewhere. <strong>Acta BioScientia</strong> will however consider manuscripts that have been deposited in preprint servers or published in institutional repositories. Works that have been presented at conferences would also be considered. 
+                All manuscript submitted to <strong>Acta BioScientia</strong> must not have been published (either partly or as a whole) prior to submission; neither must it be under consideration for publication elsewhere. <strong>Acta BioScientia</strong> will however consider manuscripts that have been deposited in preprint servers or published in institutional repositories. Works that have been presented at conferences would also be considered. 
                 </p>
                 <p className="text-[14px] my-4 leading-7">Submission of a manuscript clearly indicates that all authors have granted permissions to publish it. author (corresponding author) is however responsible for ensuring that the article's publication has been approved by all co-authors.</p>
                 <strong>Confidentiality</strong>

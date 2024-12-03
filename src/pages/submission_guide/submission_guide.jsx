@@ -34,7 +34,7 @@ export default function SubmissionGuide() {
             <b>Acta BioScientia</b> is an open access journal that covers a wide range
             of academic disciplines. Prior to manuscript submission, please read
             carefully and adhere to the instructions in the submission
-            guidelines. This would ensure that a seamless process from
+            guidelines. This would ensure a seamless process from
             submission to the successful publication of your manuscript.
           </p>
 
@@ -44,7 +44,7 @@ export default function SubmissionGuide() {
           <p className="text-[14px] leading-7">
             <strong>Acta BioScientia</strong> accepts manuscripts prepared in
             the following formats: Microsoft Word (2007 and above) submitted via{" "}
-            <a className="text-blue-700" href="/home">
+            <a className="text-blue-700" href="/">
               the Journal Website.
             </a>{" "}
             If the online submission proves difficult due to technical issues,
@@ -147,8 +147,7 @@ export default function SubmissionGuide() {
             Acknowledgement
           </strong>
           <p className="text-[14px] leading-7">
-            All contributors who do not meet the criteria for authorship (as
-            stated below) should be listed in the acknowledgements section.{" "}
+            All contributors who do not meet the criteria for authorship should be listed in the acknowledgements section.{" "}
           </p>
           <strong className="text-[#d80c6c] text-center my-2">
             Declaration of conflict of interest{" "}
