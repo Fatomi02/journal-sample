@@ -16,7 +16,7 @@ export default function Navbar () {
                 </div>
             </nav>
             <div className="nav-links-div">
-                <div className="hidden w-[full] md:flex justify-center gap-4 text-white">
+                <div className="hidden w-[full] lg:flex justify-center gap-4 text-white">
                     <div className="active"><Link className="w-[90px] h-[70px] flex flex-col text-center justify-center" to="/">Home</Link></div>
                     <div className="hover">
                         <a className="w-[90px] h-[70px] flex flex-col text-center link justify-center" href="/">About us</a>
