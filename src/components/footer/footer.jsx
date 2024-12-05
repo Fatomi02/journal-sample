@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <>
       <section className="footer">
-        <div className="xl:w-[64%] w-[90%] mt-[80px] text-start mx-auto flex flex-col md:flex-row mb-[30px] gap-[40px] xl:gap-[200px] pt-[60px] text-[14px]">
+        <div className="xl:w-[64%] lg:w-[80%] w-[90%] mt-[80px] text-start mx-auto flex flex-col md:flex-row mb-[30px] gap-[40px] md:justify-between pt-[60px] text-[14px]">
           <div className="text-white  selection:text-white">
             <ul>
               <li className="py-1 pl-4 hover:underline">
