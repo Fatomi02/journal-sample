@@ -129,7 +129,7 @@ export default function SubmitPage() {
       try {
         const formData = new FormData(ev.currentTarget);
         const postReq = await fetch(
-          "https://test.bigchiefstores.com/api/submit.php",
+          "https://actabioscientia.org/api/submit-journal.php",
           {
             method: "POST",
             body: formData,
