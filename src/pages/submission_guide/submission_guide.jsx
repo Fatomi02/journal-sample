@@ -56,10 +56,10 @@ export default function SubmissionGuide() {
               Actabioscientia@gmail.com
             </a>
             . <br />
-            <p className="my-2">
+            <span className="my-2">
               Full text, including Figures and Tables should be submitted via
               our online platform
-            </p>
+            </span>
           </p>
           <strong className="text-[#d80c6c] text-center mb-3">
             Article Type
