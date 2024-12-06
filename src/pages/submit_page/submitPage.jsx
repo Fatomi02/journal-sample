@@ -144,8 +144,8 @@ export default function SubmitPage() {
           setError(true);
         } else {
           setSuccess(true);
+          ev.currentTarget.reset();
         }
-        ev.currentTarget.reset();
       } catch (error) {
         setError(true);
       }

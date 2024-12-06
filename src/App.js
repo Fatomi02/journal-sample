@@ -5,7 +5,7 @@ import Plagiarism from './pages/plagiarism/plagiarism';
 import ContactPage from './pages/contact/contact';
 import PublicationFee from './pages/publication_fee/publication_fee';
 import SubmissionGuide from './pages/submission_guide/submission_guide';
-import Copyright from './pages/copyright/copyright';
+// import Copyright from './pages/copyright/copyright';
 import DigitalArchive from './pages/digital_archive/digital_archive';
 import PublicationEthics from './pages/publication_ethics/publication_ethics';
 import EditorialPolicy from './pages/editorial_policy/editorial_policy';
