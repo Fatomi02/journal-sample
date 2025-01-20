@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Navbar from "../../components/navbar/navbar";
-import arrowDown from "../../assets/icons/dropdown.png";
-import arrowUp from "../../assets/icons/arrow-up.png";
+// import arrowDown from "../../assets/icons/dropdown.png";
+// import arrowUp from "../../assets/icons/arrow-up.png";
 import Footer from "../../components/footer/footer";
 import { Link, Outlet } from "react-router-dom";
 import Widget from "../../components/widget/widget";
 
 export default function DigitalArchive() {
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
     // Scroll to top on component mount
     window.scrollTo(0, 0);
@@ -34,7 +34,7 @@ export default function DigitalArchive() {
       </div>
       <section className="2xl:w-[64%] bg-[#FCFCFC] mx-auto md:flex justify-between w-[86%] mt-[70px] mb-10">
         <div className="w-full mx-auto md:w-[75%] text-justify text-[#626262] text-[14px] mt-[-36px] leading-7">
-          <div className="flex gap-3">
+          {/* <div className="flex gap-3">
             <strong>Volume 1 (2024)</strong>
             {!isOpen ? (
               <img
@@ -65,7 +65,7 @@ export default function DigitalArchive() {
               </ul>
               <strong className="my-4">Coming soon</strong>
             </>
-          )}
+          )} */}
         </div>
         <Widget />
       </section>

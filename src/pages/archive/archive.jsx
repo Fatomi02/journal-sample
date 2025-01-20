@@ -1,18 +1,62 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../../components/navbar/navbar";
 import Footer from "../../components/footer/footer";
 import { Link, Outlet } from "react-router-dom";
 import Widget from "../../components/widget/widget";
+import emptyBanner from "../../assets/images/empty.png";
+import api from "../../api/api";
+import { toast } from "react-toastify";
 
 export default function Archive() {
+    const [journals, setJournals] = useState([]);
+    const [groupedJournals, setGroupedJournals] = useState({});
+    const [isLoading, setIsLoading] = useState(false);
+
     useEffect(() => {
-        // Scroll to top on component mount
         window.scrollTo(0, 0);
-      }, []); // Empty dependency array means this runs once when the component mounts
+        setIsLoading(true);
+        api.get('/api/journals').then((response) => {
+            if (response) {
+                setIsLoading(false);
+                setJournals(response.data.journals);
+            }
+        }).catch((error) => {
+            setIsLoading(false);
+            toast.error(error);
+            console.error(error);
+        });
+    }, []);
+
+    useEffect(() => {
+        if (Array.isArray(journals) && journals.length > 0) {
+            // Group journals by volume and remove duplicates for the same volume/issue combination
+            const grouped = journals.reduce((acc, journal) => {
+                const volume = journal.volume;
+                const issue = journal.issue;
+                if (!acc[volume]) {
+                    acc[volume] = [];
+                }
+                // Add the journal if it's not already included (based on volume and issue)
+                if (!acc[volume].some(existingJournal => existingJournal.issue === issue)) {
+                    acc[volume].push(journal);
+                }
+                return acc;
+            }, {});
+
+            // Sort the journals within each volume by issue
+            Object.keys(grouped).forEach((volume) => {
+                grouped[volume].sort((a, b) => a.issue - b.issue);
+            });
+
+            setGroupedJournals(grouped);
+        }
+    }, [journals]);
+
+    const sortedVolumes = Object.keys(groupedJournals).sort((a, b) => b - a);
 
     return (
         <>
-        <Navbar />
+            <Navbar />
             <div className="w-full mt-[240px] md:mt-[250px] text-center relative z-0 mx-auto bg-[#f6f6f6] py-[30px] shadow-[0_1px_0px_0px_rgba(0,0,0,0.3)]">
                 <h2 className="text-[30px] leading-9 italic text-[#444444]">Archive</h2>
                 <ul className="flex justify-center gap-4 text-[#797979] mt-3">
@@ -20,22 +64,33 @@ export default function Archive() {
                     <li><span> &gt;</span></li>
                     <li className="hover:underline"><Link to="/archive">Archive</Link></li>
                 </ul>
-
             </div>
             <section className="2xl:w-[64%] bg-[#FCFCFC] mx-auto md:flex justify-between w-[86%] mt-[70px] mb-10">
                 <div className="w-full mx-auto md:w-[75%] text-justify text-[#626262] text-[14px] mt-[-36px] leading-7">
-                {/* <strong className="my-4">Volume 1 (2024)</strong>
-                        <ul className="flex flex-col gap-3 pl-[30px] md:pl-[40px] my-4">
-                            <li className="text-[#d80c6c] font-medium"><Link to="/">Issue 1</Link></li>
-                            <li className="text-[#d80c6c] font-medium"><Link to="/">Issue 2</Link></li>
-                            <li className="text-[#d80c6c] font-medium"><Link to="/">Issue 3</Link></li>
-                        </ul> */}
+                    {isLoading && <div className="flex justify-center items-center h-full w-full"><span className="loader"></span></div>}
+                    {(!isLoading && journals.length > 0) &&
+                        sortedVolumes.map((volume) => (
+                            <div key={volume} style={{ marginBottom: "20px" }}>
+                                <h3 className="font-bold text-[#d80c6c] text-[16px]">Volume {volume}</h3>
+                                {groupedJournals[volume].map((journal) => (
+                                    <Link to={`/journal/${volume}/${journal.issue}`} key={journal._id} style={{ marginLeft: "20px", color: "#d80c6c", display: "block", marginBottom: "10px" }}>
+                                        Issue {journal.issue}
+                                    </Link>
+                                ))}
+                            </div>
+                        ))}
+                        
+                    {(!isLoading && journals.length === 0) &&
+                        <div className="flex justify-center items-center h-full w-full flex-col gap-4">
+                            <img width={200} height={200} src={emptyBanner} alt="emptyData" />
+                            <div className="font-medium text-[18px]">No Published Journal</div>
+                        </div>
+                    }
                 </div>
                 <Widget />
             </section>
-        <Footer />
-
-        <Outlet />
-    </>
-    )
+            <Footer />
+            <Outlet />
+        </>
+    );
 }
