@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import api from "../../api/api";
+import book from '../../assets/icons/book.svg';
 
 export default function Widget () {
 
@@ -75,7 +76,7 @@ export default function Widget () {
                                 })})</h3>
                                 {groupedJournals[volume].map((journal) => (
                                     <div key={journal._id} className="bg-[#f5f5f5] flex items-center gap-2 pl-2 py-3">
-                                        <div className="w-2 h-2 bg-[#d80c6c] rounded-full"></div>
+                                        <img width={20} height={20} src={book} alt="article" />
                                         <Link to={`/journal/${volume}/${journal.issue}`} style={{ color: "#d80c6c" }}>
                                         Issue {journal.issue}
                                     </Link>
@@ -85,7 +86,7 @@ export default function Widget () {
                         ))}
 
                 <div className="mt-14">
-                    <span className="text-[#626262]">... click <a href="/archive" className="text-[#d80c6c] hover:underline">here</a> for more</span>
+                    <span className="text-[#626262]">... click <a href="/archive" className="text-[#d80c6c] hover:underline">here</a> for more articles</span>
                 </div>
 
             </div>

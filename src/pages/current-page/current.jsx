@@ -6,6 +6,7 @@ import Widget from "../../components/widget/widget";
 import emptyBanner from "../../assets/images/empty.png";
 import api from "../../api/api";
 import { toast } from "react-toastify";
+import book from '../../assets/icons/book.svg';
 
 
 export default function CurrentPage() {
@@ -51,13 +52,14 @@ export default function CurrentPage() {
             <section className="2xl:w-[64%] bg-[#FCFCFC] mx-auto md:flex justify-between w-[86%] mt-[70px] mb-10">
                 <div className="w-full mx-auto md:w-[70%] text-justify text-[#626262] text-[14px] mt-[-36px] flex flex-col gap-8 leading-7">
                     {filteredJournals.length > 0 && <h6 className="text-center font-semibold text-[#d80c6c] text-[18px]">Volume {filteredJournals[0]?.volume} Issue {filteredJournals[0]?.issue}</h6>}
-                    <ul className="list-disc flex flex-col gap-1">
+                    <ul className="list-disc flex flex-col gap-2">
                         {isLoading && <div className="flex justify-center items-center h-full w-full"><span className="loader"></span></div> }
                         {(!isLoading && filteredJournals.length > 0) &&
                         filteredJournals.map((journal) => (
-                            <li key={journal._id} className="font-medium text-[#d80c6c]">
-                                <Link to={`/journal/${journal.volume}/${journal.issue}/${journal.page}`} className="text-[16px] hover:underline">{journal.title}</Link>
-                            </li>
+                            <div key={journal._id} className="flex gap-2 items-center">
+                                <img width={28} height={28} src={book} alt="" />
+                                <Link to={`/journal/${journal.volume}/${journal.issue}/${journal.page}`} className="font-medium text-[#d80c6c] text-[16px] hover:underline">{journal.title}</Link>
+                            </div>
                         ))
                         }
                     </ul>

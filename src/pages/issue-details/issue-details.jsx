@@ -7,6 +7,7 @@ import Widget from "../../components/widget/widget";
 import emptyBanner from "../../assets/images/empty.png";
 import api from "../../api/api";
 import { toast } from "react-toastify";
+import book from '../../assets/icons/book.svg';
 
 
 export default function IssueDetails() {
@@ -50,13 +51,14 @@ export default function IssueDetails() {
             </div>
             <section className="2xl:w-[64%] bg-[#FCFCFC] mx-auto md:flex justify-between w-[86%] mt-[70px] mb-10">
                 <div className="w-full mx-auto md:w-[70%] text-justify text-[#626262] text-[14px] mt-[-36px] flex flex-col gap-8 leading-7">
-                    <ul className="list-disc flex flex-col gap-1 pl-[30px] lg:pl-0">
+                    <ul className="list-disc flex flex-col gap-2 pl-[30px] lg:pl-0">
                         {isLoading && <div className="flex justify-center items-center h-full w-full"><span className="loader"></span></div> }
                         {(!isLoading && filteredJournals.length > 0) &&
                         filteredJournals.map((journal) => (
-                            <li key={journal._id} className="font-medium text-[14px] tracking-tighter text-[#d80c6c]">
-                                <Link to={`/journal/${volume}/${journal.issue}/${journal.page}}`} className="text-[16px] hover:underline">{journal.title}</Link>
-                            </li>
+                            <div key={journal._id} className="flex gap-2 items-center">
+                                <img width={24} height={24} src={book} alt="journal" />
+                                <Link to={`/journal/${volume}/${journal.issue}/${journal.page}}`} className="font-medium tracking-tighter text-[#d80c6c] text-[16px] hover:underline">{journal.title}</Link>
+                            </div>
                         ))
                         }
                     </ul>

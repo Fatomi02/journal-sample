@@ -6,6 +6,7 @@ import Widget from "../../components/widget/widget";
 import emptyBanner from "../../assets/images/empty.png";
 import api from "../../api/api";
 import { toast } from "react-toastify";
+import book from '../../assets/icons/book.svg';
 
 export default function Archive() {
     const [journals, setJournals] = useState([]);
@@ -67,19 +68,24 @@ export default function Archive() {
             </div>
             <section className="2xl:w-[64%] bg-[#FCFCFC] mx-auto md:flex justify-between w-[86%] mt-[70px] mb-10">
                 <div className="w-full mx-auto md:w-[75%] text-justify text-[#626262] text-[14px] mt-[-36px] leading-7">
-                    {isLoading && <div className="flex justify-center items-center h-full w-full"><span className="loader"></span></div>}
+                    {isLoading && <div className="flex justify-center items-center w-full min-h-[200px]"><span className="loader"></span></div>}
                     {(!isLoading && journals.length > 0) &&
                         sortedVolumes.map((volume) => (
                             <div key={volume} style={{ marginBottom: "20px" }}>
+
                                 <h3 className="font-bold text-[#d80c6c] text-[16px]">Volume {volume}</h3>
                                 {groupedJournals[volume].map((journal) => (
-                                    <Link to={`/journal/${volume}/${journal.issue}`} key={journal._id} style={{ marginLeft: "20px", color: "#d80c6c", display: "block", marginBottom: "10px" }}>
-                                        Issue {journal.issue}
-                                    </Link>
+                                    <div className="flex gap-2 items-center ml-4">
+                                        <img width={24} height={24} src={book} alt="journal" />
+                                        <Link to={`/journal/${volume}/${journal.issue}`} className="text-[16px]" key={journal._id} style={{ color: "#d80c6c", display: "block", }}>
+                                            Issue {journal.issue}
+                                        </Link>
+                                    </div>
+
                                 ))}
                             </div>
                         ))}
-                        
+
                     {(!isLoading && journals.length === 0) &&
                         <div className="flex justify-center items-center h-full w-full flex-col gap-4">
                             <img width={200} height={200} src={emptyBanner} alt="emptyData" />
