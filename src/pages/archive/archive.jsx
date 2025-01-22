@@ -68,7 +68,7 @@ export default function Archive() {
             </div>
             <section className="2xl:w-[64%] bg-[#FCFCFC] mx-auto md:flex justify-between w-[86%] mt-[70px] mb-10">
                 <div className="w-full mx-auto md:w-[75%] text-justify text-[#626262] text-[14px] mt-[-36px] leading-7">
-                    {isLoading && <div className="flex justify-center items-center w-full min-h-[200px]"><span className="loader"></span></div>}
+                    {isLoading && <div className="flex justify-center items-center w-full min-h-[300px]"><span className="loader"></span></div>}
                     {(!isLoading && journals.length > 0) &&
                         sortedVolumes.map((volume) => (
                             <div key={volume} style={{ marginBottom: "20px" }}>

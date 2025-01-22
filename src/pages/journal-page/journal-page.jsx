@@ -58,7 +58,7 @@ export default function JournalPage() {
             </div>
             <section className="2xl:w-[64%] bg-[#FCFCFC] mx-auto md:flex justify-between w-[86%] mt-[70px] mb-10">
                 <div className="w-full mx-auto md:w-[75%] text-justify text-[#626262] text-[14px] mt-[-36px] flex flex-col gap-4 leading-7">
-                    {isLoading && <div className="flex justify-center items-center h-full w-full"><span className="loader"></span></div>}
+                    {isLoading && <div className="flex justify-center items-center min-h-[300px] w-full"><span className="loader"></span></div>}
                     {(!isLoading && filteredJournal.length > 0) && <>
                         <div className="w-full flex flex-col gap-2 items-center">
                             <div className="flex flex-col lg:flex-row gap-1 lg:gap-8 items-center">
@@ -89,7 +89,7 @@ export default function JournalPage() {
                             </div>
                         </div>
                         <div className="flex justify-start">
-                        <a href={filteredJournal[0].fileUrl} target="_blank" rel="noreferrer" className="px-3 py-2 bg-[#e05897] text-white hover:opacity-50 rounded-lg">Download File</a>
+                        <a href={`https://actabioscientia.org/api/uploads/${filteredJournal[0].file}`} target="_blank" rel="noreferrer" className="px-3 py-2 bg-[#e05897] text-white hover:opacity-50 rounded-lg">Download File</a>
                         </div>
                     </>}
                     {(!isLoading && filteredJournal.length === 0) &&
