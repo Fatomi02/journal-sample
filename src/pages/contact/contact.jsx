@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Footer from "../../components/footer/footer";
 import Widget from "../../components/widget/widget";
 import Navbar from "../../components/navbar/navbar";
@@ -81,7 +81,6 @@ const ContactPage = () => {
         <Widget />
       </section>
       <Footer />
-      <Outlet />
     </>
     )
 }

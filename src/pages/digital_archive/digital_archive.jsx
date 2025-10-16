@@ -3,7 +3,7 @@ import Navbar from "../../components/navbar/navbar";
 // import arrowDown from "../../assets/icons/dropdown.png";
 // import arrowUp from "../../assets/icons/arrow-up.png";
 import Footer from "../../components/footer/footer";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Widget from "../../components/widget/widget";
 
 export default function DigitalArchive() {
@@ -70,8 +70,6 @@ export default function DigitalArchive() {
         <Widget />
       </section>
       <Footer />
-
-      <Outlet />
     </>
   );
 }

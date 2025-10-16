@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Navbar from "../../components/navbar/navbar";
 import Footer from "../../components/footer/footer";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Widget from "../../components/widget/widget";
 
 export default function EditorialPolicy() {
@@ -34,8 +34,6 @@ export default function EditorialPolicy() {
                 <Widget />
             </section>
         <Footer />
-
-        <Outlet />
     </>
     )
 }

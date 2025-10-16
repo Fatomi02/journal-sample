@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../../components/navbar/navbar";
 import Footer from "../../components/footer/footer";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Widget from "../../components/widget/widget";
 import emptyBanner from "../../assets/images/empty.png";
 import api from "../../api/api";
@@ -96,7 +96,6 @@ export default function Archive() {
                 <Widget />
             </section>
             <Footer />
-            <Outlet />
         </>
     );
 }
