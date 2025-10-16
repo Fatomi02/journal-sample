@@ -1,13 +1,12 @@
 import React, { useEffect } from "react";
 import Navbar from "../../components/navbar/navbar";
 import Footer from "../../components/footer/footer";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function SubmissionGuide() {
   useEffect(() => {
-    // Scroll to top on component mount
     window.scrollTo(0, 0);
-  }, []); // Empty dependency array means this runs once when the component mounts
+  }, []);
 
   return (
     <>
@@ -201,8 +200,6 @@ export default function SubmissionGuide() {
         </div>
       </section>
       <Footer />
-
-      <Outlet />
     </>
   );
 }

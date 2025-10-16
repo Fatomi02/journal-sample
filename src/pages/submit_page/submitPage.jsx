@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../../components/navbar/navbar";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import checkWhite from "../../assets/icons/check-white.svg";
 import closeWhite from "../../assets/icons/close-white.svg";
 import Widget from "../../components/widget/widget";
@@ -11,9 +11,8 @@ export default function SubmitPage() {
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
   useEffect(() => {
-    // Scroll to top on component mount
     window.scrollTo(0, 0);
-  }, []); // Empty dependency array means this runs once when the component mounts
+  }, []);
 
   const checkValidation = () => {
     let isValid = true; // Assume form is valid initially
@@ -440,7 +439,6 @@ export default function SubmitPage() {
         <Widget />
       </section>
       <Footer />
-      <Outlet />
     </>
   );
 }

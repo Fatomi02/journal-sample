@@ -2,6 +2,7 @@ import React from "react";
 import mail from "../../assets/icons/mail.png";
 import phone from "../../assets/icons/phone.png";
 import { Outlet, Link } from "react-router-dom";
+import ithenticate from "../../assets/logos/ithenticate-badge.png"
 import "./footer.css";
 
 export default function Footer() {
@@ -76,7 +77,8 @@ export default function Footer() {
           </div>
         </div>
         <span>Copyright reserved © Acta BioScientia </span> <br />
-        <span>Powered by Optimus_Prime_Technologies</span>
+        <span>Powered by Optimus_Prime_Technologies</span> <br /> <br />
+        <div className="flex gap-3 justify-center">© 2025 Acta BioScientia | Verified by <img className="" src={ithenticate} alt="iThenticate Badge" width={100} height={100} /></div>
       </section>
       <Outlet />
     </>

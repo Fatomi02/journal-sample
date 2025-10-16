@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Widget from "../../components/widget/widget";
 import Footer from "../../components/footer/footer";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Navbar from "../../components/navbar/navbar";
 
 export default function EditorialInBoard() {
@@ -86,7 +86,6 @@ export default function EditorialInBoard() {
         <Widget />
       </section>
       <Footer />
-      <Outlet />
     </>
   );
 }
