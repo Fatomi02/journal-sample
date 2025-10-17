@@ -1,6 +1,6 @@
 .footer {
     width: 100%;
-    background-color: #d80c6c !important;
+    background-color: var(--primary-blue) !important;
     text-align: center;
     color: white;
     padding-bottom: 50px;

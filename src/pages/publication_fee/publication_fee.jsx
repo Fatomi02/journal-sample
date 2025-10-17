@@ -30,7 +30,7 @@ export default function PublicationFee() {
       </div>
       <section className="2xl:w-[64%] mx-auto bg-[#FCFCFC] md:flex justify-between w-[86%] mt-[70px] mb-10">
         <div className="w-full mx-auto md:w-[75%] text-justify text-[#626262] text-[14px] mt-[-36px] leading-7">
-          <strong className="text-[#d80c6c]">
+          <strong className="text-primary">
             Article Publishing Charge (APC)
           </strong>
           <p className="text-[14px] leading-7 my-4">
@@ -41,7 +41,7 @@ export default function PublicationFee() {
             permanently free to access by everyone.
           </p>
 
-          <strong className="text-[#d80c6c] my-4">
+          <strong className="text-primary my-4">
             The Article Publishing Charge for this journal is:
           </strong>
           <ul className="flex flex-col gap-3 pl-[30px] md:pl-[40px] my-4 list-decimal">
@@ -51,7 +51,7 @@ export default function PublicationFee() {
               Article processing charges apply only to manuscripts accepted for
               publication.{" "}
             </li>
-            <strong className="text-[#d80c6c]">Discounts and waivers</strong>
+            <strong className="text-primary">Discounts and waivers</strong>
             <p className="text-[14px] leading-6">
               Authors are eligible for discounts and waivers provided they
               produce evidence they are unable to pay APC.

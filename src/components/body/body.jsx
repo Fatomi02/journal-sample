@@ -19,21 +19,28 @@ export default function Body() {
     <>
       <section className="2xl:w-[64%] w-[86%] mt-[280px] relative z-0 mx-auto md:flex justify-between mb-10">
         <div className="w-full md:w-[75%]">
-          <div className="index">
+          <div className="index flex gap-4 md:gap-10 items-center mb-10">
             <img
-              className="md:w-[90%] w-full h-[150px] md:h-[280px] xxl:h-[400px]"
+              className="w-[80%] h-[150px] md:h-[280px] xxl:h-[400px]"
               src={banner}
               alt="Banner"
             />
+            <div class="flex flex-col gap-10 items-center">
+              <img src="assets/logos/google-scholar.svg" className="w-10 md:w-20" alt="Google Scholar" />
+              <div class="flex flex-col gap-2 items-center text-center">
+                <img src="assets/logos/crossref-logo.svg" alt="Crossref" />
+                <small className="text-primary text-[10px] max-sm:text-[4px]">This journal is Crossref Indexed</small>
+              </div>
+            </div>
           </div>
-          <div className="py-6">
+          <div>
             <p className="text-justify text-[14px]  selection:text-white leading-[28px] text-[#626262] mb-[10px]">
               <span>
                 <strong>
                   Acta BioScientia: Journal of Biomedical and Biological
                   Sciences
                 </strong>{" "}
-                is a Biomedical Science Journal of the Behavioural Neuroscience Research Group, Ladoke Akintola University of Technology that is domiciled in the Department of Pharmacology and Therapeutics, Clinical Sciences Building, College of Health Sciences, Ladoke Akintola University of Technology, Ogbomoso Nigeria. 
+                is a Biomedical Science Journal of the Behavioural Neuroscience Research Group, Ladoke Akintola University of Technology that is domiciled in the Department of Pharmacology and Therapeutics, Clinical Sciences Building, College of Health Sciences, Ladoke Akintola University of Technology, Ogbomoso Nigeria.
               </span>
             </p>
             <p className="text-justify text-[14px]  selection:text-white text-[#626262]  leading-[28px] mb-[10px]">
@@ -50,13 +57,13 @@ export default function Body() {
               </span>
             </p>
 
-            {/* <h5 className="font-semibold text-[15px] text-[#d80c6c]">A publication of Faculty of Basic Medical Sciences and Faculty of Basic Clinical Sciences, Ladoke Akintola University of Technology, Ogbomoso</h5> */}
+            {/* <h5 className="font-semibold text-[15px] text-primary">A publication of Faculty of Basic Medical Sciences and Faculty of Basic Clinical Sciences, Ladoke Akintola University of Technology, Ogbomoso</h5> */}
 
             <div className="mt-[20px] md:mt-[60px] flex flex-col gap-8">
               <div className="w-full flex items-center flex-col-reverse md:flex-row gap-2">
                 <img className="w-[800px] h-[200px]" src={Aim} alt="" />
                 <div>
-                  <span className="text-[20px] lg::text-[39px] selection:text-white font-normal mb-[22px] text-[#d80c6c]">
+                  <span className="text-[20px] lg::text-[39px] selection:text-white font-normal mb-[22px] text-primary">
                     Aim
                   </span>
                   <p className="text-justify flex flex-col gap-3 mt-[10px] md:mt-0 text-[14px] xl:text-[14px]  selection:text-white text-[#626262] mb-[20px] leading-[28px]">
@@ -68,12 +75,12 @@ export default function Body() {
               </div>
               <div className="w-full flex items-center flex-col md:flex-row gap-2">
                 <div>
-                  <span className="text-[20px] lg::text-[39px] selection:text-white font-normal mb-[22px] text-[#d80c6c]">
+                  <span className="text-[20px] lg::text-[39px] selection:text-white font-normal mb-[22px] text-primary">
                     Scope
                   </span>
                   <p className="text-justify flex flex-col gap-3 mt-[10px] md:mt-0 text-[14px] xl:text-[14px]  selection:text-white text-[#626262] mb-[10px] leading-[28px]">
                     <span>
-                      <strong>Acta BioScientia</strong> is a Journal that is published thrice annually and provides readers with an array of titles that include <b>original reports</b> that address current and trending research in the Biomedical and Biological Sciences; <b>review articles</b> (written by experts and early career researchers) addressing topics of general interest and importance; <b>short reports</b> including case reports, commentaries, editorials and conference proceedings and also <b>letter to the editor</b> which project burning issues. Privilege is given to <b>invited reviews</b> and <b>perspective papers.</b> The Journal is committed to a prompt review process with timely publication of all accepted manuscripts. 
+                      <strong>Acta BioScientia</strong> is a Journal that is published thrice annually and provides readers with an array of titles that include <b>original reports</b> that address current and trending research in the Biomedical and Biological Sciences; <b>review articles</b> (written by experts and early career researchers) addressing topics of general interest and importance; <b>short reports</b> including case reports, commentaries, editorials and conference proceedings and also <b>letter to the editor</b> which project burning issues. Privilege is given to <b>invited reviews</b> and <b>perspective papers.</b> The Journal is committed to a prompt review process with timely publication of all accepted manuscripts.
                     </span>
                   </p>
                 </div>
@@ -82,7 +89,7 @@ export default function Body() {
             </div>
           </div>
 
-          <h2 className="text-[18px] md:text-[32px] text-[#d80c6c] mt-3 selection:text-white font-bold mb-[15px]">
+          <h2 className="text-[18px] md:text-[32px] text-primary mt-3 selection:text-white font-bold mb-[15px]">
             WHY PUBLISH WITH US?
           </h2>
           <ul className="text-[14px] md:text-[14px] list-disc flex flex-col gap-[15px]  selection:text-white pl-[30px]">
@@ -115,9 +122,9 @@ export default function Body() {
                   Open Access
                 </span>
                 <span className=" text-[18px] leading-7 text-[#626262] selection:text-white">
-                The basic idea of open access publishing is to allow unrestricted access to published work.
+                  The basic idea of open access publishing is to allow unrestricted access to published work.
                 </span>
-                <button onClick={()=> route('/open-access-policy')} className="bg-[#e67817] py-3 hover:text-[#626262] px-5 text-center w-full text-[white]">
+                <button onClick={() => route('/open-access-policy')} className="bg-[#e67817] py-3 hover:text-[#626262] px-5 text-center w-full text-[white]">
                   Read more
                 </button>
               </div>
@@ -129,9 +136,9 @@ export default function Body() {
                   Publication Ethics
                 </span>
                 <span className=" text-[18px] leading-7 text-[#626262] selection:text-white">
-                Acta BioScientia holds itself to the highest standards of publication ethics. 
+                  Acta BioScientia holds itself to the highest standards of publication ethics.
                 </span>
-                <button onClick={()=> route('/publicationethics')} className="bg-[#00923f] py-3 px-5 text-center hover:text-[#626262] w-full text-[white]">
+                <button onClick={() => route('/publicationethics')} className="bg-[#00923f] py-3 px-5 text-center hover:text-[#626262] w-full text-[white]">
                   Read more
                 </button>
               </div>
@@ -143,16 +150,16 @@ export default function Body() {
                   Submission
                 </span>
                 <span className=" text-[18px] leading-7 text-[#626262] selection:text-white">
-                Acta BioScientia has an online manuscript submission system
+                  Acta BioScientia has an online manuscript submission system
                 </span>
-                <button onClick={()=> route('/submissionguide')} className="bg-[#007dc2] py-3 px-5 text-center hover:text-[#626262] w-full text-[white]">
+                <button onClick={() => route('/submissionguide')} className="bg-[#007dc2] py-3 px-5 text-center hover:text-[#626262] w-full text-[white]">
                   Read more
                 </button>
               </div>
             </div>
           </div>
 
-          <div id="copyright" className="text-[24px] mt-[30px] text-white w-full py-2 bg-[#d80c6c] flex justify-center mb-[20px]">
+          <div id="copyright" className="text-[24px] mt-[30px] text-white w-full py-2 bg-primary flex justify-center mb-[20px]">
             Creative Commons
           </div>
 
@@ -161,7 +168,7 @@ export default function Body() {
             the public permission for use of creative works under copyright law.
             All articles published by <strong>Acta BioScientia</strong> are
             licensed under a{" "}
-            <a className="text-[#d80c6c]" href="/">
+            <a className="text-primary" href="/">
               Creative Commons Attribution 4.0 International License.
             </a>
             <img className="inline-block" src={License} alt="" />

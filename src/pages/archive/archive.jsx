@@ -6,7 +6,7 @@ import Widget from "../../components/widget/widget";
 import emptyBanner from "../../assets/images/empty.png";
 import api from "../../api/api";
 import { toast } from "react-toastify";
-import book from '../../assets/icons/book.svg';
+import book from '../../assets/icons/book.png';
 
 export default function Archive() {
     const [journals, setJournals] = useState([]);
@@ -73,11 +73,11 @@ export default function Archive() {
                         sortedVolumes.map((volume) => (
                             <div key={volume} style={{ marginBottom: "20px" }}>
 
-                                <h3 className="font-bold text-[#d80c6c] text-[16px]">Volume {volume}</h3>
+                                <h3 className="font-bold text-primary text-[16px]">Volume {volume}</h3>
                                 {groupedJournals[volume].map((journal) => (
                                     <div className="flex gap-2 items-center ml-4">
                                         <img width={24} height={24} src={book} alt="journal" />
-                                        <Link to={`/journal/${volume}/${journal.issue}`} className="text-[16px]" key={journal._id} style={{ color: "#d80c6c", display: "block", }}>
+                                        <Link to={`/journal/${volume}/${journal.issue}`} className="text-[16px] block text-primary hover:underline hover:text-se" key={journal._id}>
                                             Issue {journal.issue}
                                         </Link>
                                     </div>

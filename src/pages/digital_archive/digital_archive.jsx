@@ -59,7 +59,7 @@ export default function DigitalArchive() {
           {isOpen && (
             <>
               <ul className="flex flex-col gap-3 pl-[30px] md:pl-[40px] my-4">
-                <li className="text-[#d80c6c] font-medium">
+                <li className="text-primary font-medium">
                   <Link to="/">Issue 1</Link>
                 </li>
               </ul>

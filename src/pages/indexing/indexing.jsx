@@ -28,21 +28,19 @@ export default function Indexing() {
                     <div className="w-full flex flex-col gap-2 items-center mb-10">
                         <div className="flex flex-col lg:flex-row gap-1 lg:gap-8 items-center">
                             <img width={80} height={80} src={logo} alt="" />
-                            <h2 className="font-bold text-[16px] text-center lg:text-start text-[#d80c6c]">Acta BioScientia - Journal of Biomedical <br /> and Biological Sciences</h2>
+                            <h2 className="font-bold text-[16px] text-center lg:text-start text-primary">Acta BioScientia - Journal of Biomedical <br /> and Biological Sciences</h2>
                         </div>
                     </div>
-                    <p className="text-[14px] text-[#d80c6c] my-4 leading-7">
+                    <p className="text-[14px] text-primary my-4 leading-7">
                         <strong>Abstracting and Indexing:</strong>
                     </p>
                     <ul>
-                        <li className="text-[#d80c6c] cursor-pointer hover:underline">
-                            <Link to="/indexing/cross-refs">CrossRef</Link>
-                        </li>
-                        <li className="text-[#d80c6c] cursor-pointer hover:underline">CiteFactor</li>
-                        <li className="text-[#d80c6c] cursor-pointer hover:underline">Google Scholar</li>
-                        <li className="text-[#d80c6c] cursor-pointer hover:underline">JournalSeek</li>
-                        <li className="text-[#d80c6c] cursor-pointer hover:underline">JournalTOCs</li>
-                        <li className="text-[#d80c6c] cursor-pointer hover:underline">ResearchBib</li>
+                        <li className="text-primary cursor-pointer hover:underline">CrossRef</li>
+                        <li className="text-primary cursor-pointer hover:underline">CiteFactor</li>
+                        <li className="text-primary cursor-pointer hover:underline">Google Scholar</li>
+                        <li className="text-primary cursor-pointer hover:underline">JournalSeek</li>
+                        <li className="text-primary cursor-pointer hover:underline">JournalTOCs</li>
+                        <li className="text-primary cursor-pointer hover:underline">ResearchBib</li>
                     </ul>
                 </div>
                 <Widget />

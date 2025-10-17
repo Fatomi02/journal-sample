@@ -5,7 +5,6 @@ import Footer from "../../components/footer/footer";
 import Widget from "../../components/widget/widget";
 import logo from "../../assets/logos/ACTA-BIOSCIENTA.png";
 import emptyBanner from "../../assets/images/empty.png";
-import book from "../../assets/icons/book.svg";
 import { Editor } from 'react-draft-wysiwyg';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import { convertFromRaw, EditorState } from 'draft-js';
@@ -127,22 +126,22 @@ export default function JournalPage() {
                             <div className="w-full flex flex-col gap-2 items-center">
                                 <div className="flex flex-col lg:flex-row gap-1 lg:gap-8 items-center">
                                     <img width={80} height={80} src={logo} alt="Acta BioScientia Logo" />
-                                    <h2 className="font-bold text-[16px] text-center lg:text-start text-[#d80c6c]" itemProp="publisher">
+                                    <h2 className="font-bold text-[16px] text-center lg:text-start text-primary" itemProp="publisher">
                                         Acta BioScientia - Journal of Biomedical <br /> and Biological Sciences
                                     </h2>
                                 </div>
-                                <span className="text-[14px] text-[#d80c6c]">
+                                <span className="text-[14px] text-primary">
                                     <b>Volume:</b> {volume}, <b>No:</b> {issue}
                                 </span>
-                                <span><b className="text-[#d80c6c]">Published Date:</b> {new Date(article.date).toLocaleDateString('en-US', {
+                                <span><b className="text-primary">Published Date:</b> {new Date(article.date).toLocaleDateString('en-US', {
                                     month: "long",
                                     day: "2-digit",
                                     year: "numeric",
                                 })}</span>
-                                <span className="text-[14px]"> <b className="text-[#d80c6c]">Pages:</b> {article.page}</span>
+                                <span className="text-[14px]"> <b className="text-primary">Pages:</b> {article.page}</span>
                                 {article.doi && (
                                     <span className="text-[16px] font-bold">
-                                        <b className="text-[#d80c6c]">DOI: </b>
+                                        <b className="text-primary">DOI: </b>
                                         <a href={`https://doi.org/${article.doi}`} target="_blank" rel="noreferrer" className="text-blue-500" itemProp="sameAs">
                                             {article.doi}
                                         </a>
@@ -151,7 +150,7 @@ export default function JournalPage() {
                             </div>
 
                             <div className="w-full flex flex-col">
-                                <img className="mx-auto" width={40} height={40} src={book} alt="Book Icon" />
+                                <img className="mx-auto" width={40} height={40} src="assets/icons/book.png" alt="Book Icon" />
                                 <h2 className="text-center font-bold" itemProp="headline">{article.title}</h2>
                                 <div className="w-full" itemProp="articleBody">
                                     <Editor
@@ -181,8 +180,6 @@ export default function JournalPage() {
                 </div>
                 <Widget />
             </section>
-
-
             <Footer />
         </>
     );

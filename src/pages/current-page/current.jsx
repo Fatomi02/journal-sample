@@ -6,7 +6,7 @@ import Widget from "../../components/widget/widget";
 import emptyBanner from "../../assets/images/empty.png";
 import api from "../../api/api";
 import { toast } from "react-toastify";
-import book from '../../assets/icons/book.svg';
+import book from '../../assets/icons/book.png';
 
 
 export default function CurrentPage() {
@@ -57,8 +57,8 @@ export default function CurrentPage() {
                         {(!isLoading && filteredJournals.length > 0) &&
                         filteredJournals.map((journal) => (
                             <div key={journal._id} className="flex gap-2 items-center">
-                                <img width={28} height={28} src={book} alt="" />
-                                <Link to={`/journal/${journal.volume}/${journal.issue}/${journal.page}`} className="font-medium text-[#d80c6c] text-[16px] hover:underline">{journal.title}</Link>
+                                <img width={24} height={24} src={book} alt="" />
+                                <Link to={`/journal/${journal.volume}/${journal.issue}/${journal.page}`} className="font-medium text-primary hover:text-secondary text-[16px] hover:underline">{journal.title}</Link>
                             </div>
                         ))
                         }

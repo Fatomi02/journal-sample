@@ -7,7 +7,7 @@
 
 .nav-links-div {
     width: 100%;
-    background-color: #d80c6c !important;
+    background-color: var(--primary-blue) !important;
     height: 70px;
     display: flex;
     align-items: center;
@@ -18,7 +18,7 @@
 }
 
 .active {
-    background-color: #e67817;
+    background-color: var(--secondary-blue);
 }
 
 .hover {
@@ -26,7 +26,7 @@
 }
 
 .hover:hover {
-    background-color: #e67817;
+    background-color: var(--secondary-blue);
 }
 
 .sub_link {
@@ -34,7 +34,7 @@
     z-index: 1000;
 }
 
-.hover a:hover + .sub_link {
+.hover div:hover + .sub_link {
     display: block;
 }
 
@@ -43,5 +43,5 @@
 }
 
 .sub_link ul li:hover {
-    background-color: #e67817;
+    background-color: var(--accent-purple);
 }
