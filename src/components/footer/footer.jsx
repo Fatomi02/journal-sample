@@ -13,49 +13,49 @@ export default function Footer() {
           <div className="text-white  selection:text-white">
             <ul>
               <li className="py-1 pl-4 hover:underline">
-                <Link to="/">Editor in chief</Link>
+                <Link to="/" className="hover:text-secondary">Editor in chief</Link>
               </li>
               <li className="py-1 pl-4 hover:underline">
-                <Link to="/editorial-in-board">Editorial Board</Link>
+                <Link to="/editorial-in-board" className="hover:text-secondary">Editorial Board</Link>
               </li>
               <li className="py-1 pl-4 hover:underline">
-                <Link to="/peer-review">Peer Review</Link>
+                <Link to="/peer-review" className="hover:text-secondary">Peer Review</Link>
               </li>
             </ul>
           </div>
           <div className="text-white  selection:text-white">
             <ul>
               <li className="py-1 pl-4 hover:underline">
-                <Link to="/open-access-policy">Open Access</Link>
+                <Link to="/open-access-policy" className="hover:text-secondary">Open Access</Link>
               </li>
               <li className="py-1 pl-4 hover:underline">
-                <Link to="/editorialpolicy">Editorial Policy</Link>
+                <Link to="/editorialpolicy" className="hover:text-secondary">Editorial Policy</Link>
               </li>
               <li className="py-1 pl-4 hover:underline">
-                <Link to="/publicationethics">Publication Ethics</Link>
+                <Link to="/publicationethics" className="hover:text-secondary">Publication Ethics</Link>
               </li>
               <li className="py-1 pl-4 hover:underline">
-                <Link to="/digitalarchive">Digital Archive</Link>
+                <Link to="/digitalarchive" className="hover:text-secondary">Digital Archive</Link>
               </li>
               <li className="py-1 pl-4 hover:underline">
-                <a href="#copyright">Copyright</a>
+                <a href="#copyright" className="hover:text-secondary">Copyright</a>
               </li>
             </ul>
           </div>
           <div className="text-white  selection:text-white">
             <ul>
               <li className="py-1 pl-4 hover:underline">
-                <Link to="/plagiarism">Plagiarism Policy</Link>
+                <Link to="/plagiarism" className="hover:text-secondary">Plagiarism Policy</Link>
               </li>
               <li className="py-1 pl-4 hover:underline">
-                <Link to="/publicationfee">Publication fee</Link>
+                <Link to="/publicationfee" className="hover:text-secondary">Publication fee</Link>
               </li>
               <li className="py-1 pl-4 hover:underline">
-                <Link to="/submissionguide">Submission Guide</Link>
+                <Link to="/submissionguide" className="hover:text-secondary">Submission Guide</Link>
               </li>
             </ul>
           </div>
-          <div className="text-white  selection:text-white">
+          <div className="text-white selection:text-white">
             <ul>
               <li className="py-1 pl-4">
                 <i>

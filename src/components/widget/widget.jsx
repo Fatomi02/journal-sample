@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import api from "../../api/api";
-import book from '../../assets/icons/book.svg';
+import book from '../../assets/icons/book.png';
 
 export default function Widget () {
 
@@ -56,28 +56,28 @@ export default function Widget () {
     return (
         <>
             <div className="w-full mt-[50px] bg-[#FCFCFC] md:mt-0 md:w-[23%]">
-                <div className="text-[#d80c6c] font-semibold  selection:text-white">
+                <div className="text-primary font-semibold  selection:text-white">
                     <ul>
-                        <li className="py-[2px] hover:underline"><Link to="/submitpage">Submit Article</Link></li>
-                        <li className="py-[2px] hover:underline"><Link to="/submissionguide">Submission Guide</Link></li>
-                        <li className="py-[2px] hover:underline"><Link to="/plagiarism">Plagiarism</Link></li>
-                        <li className="py-[2px] hover:underline"><Link to="/editorialpolicy">Editorial Policy</Link></li>
-                        <li className="py-[2px] hover:underline"><Link to="/publicationfee">Publication fee</Link></li>
+                        <li className="py-[2px] hover:text-secondary hover:underline"><Link to="/submitpage">Submit Article</Link></li>
+                        <li className="py-[2px] hover:text-secondary hover:underline"><Link to="/submissionguide">Submission Guide</Link></li>
+                        <li className="py-[2px] hover:text-secondary hover:underline"><Link to="/plagiarism">Plagiarism</Link></li>
+                        <li className="py-[2px] hover:text-secondary hover:underline"><Link to="/editorialpolicy">Editorial Policy</Link></li>
+                        <li className="py-[2px] hover:text-secondary hover:underline"><Link to="/publicationfee">Publication fee</Link></li>
                     </ul>
                 </div>
 
-                <div className="w-full py-3 bg-[#d80c6c] text-white text-center mt-[30px] mb-[20px]">Archive</div>
+                <div className="w-full py-3 bg-primary text-white text-center mt-[30px] mb-[20px]">Archive</div>
 
                     {journals.length > 0 &&
                         sortedVolumes.map((volume, index) => (
                             <div key={volume} style={{ marginBottom: "20px" }}>
-                                <h3 className="font-bold text-[#d80c6c]">Volume {volume} ({new Date(lastThreeVolumesData[volume][0].date).toLocaleDateString('en-US', {
+                                <h3 className="font-bold text-primary">Volume {volume} ({new Date(lastThreeVolumesData[volume][0].date).toLocaleDateString('en-US', {
                                     year: "numeric"
                                 })})</h3>
                                 {groupedJournals[volume].map((journal) => (
                                     <div key={journal._id} className="bg-[#f5f5f5] flex items-center gap-2 pl-2 py-3">
                                         <img width={20} height={20} src={book} alt="article" />
-                                        <Link to={`/journal/${volume}/${journal.issue}`} style={{ color: "#d80c6c" }}>
+                                        <Link to={`/journal/${volume}/${journal.issue}`} className="text-primary hover:text-secondary hover:underline">
                                         Issue {journal.issue}
                                     </Link>
                                     </div>
@@ -86,7 +86,7 @@ export default function Widget () {
                         ))}
 
                 <div className="mt-14">
-                    <span className="text-[#626262]">... click <a href="/archive" className="text-[#d80c6c] hover:underline">here</a> for more articles</span>
+                    <span className="text-[#626262]">... click <a href="/archive" className="text-primary hover:text-secondary hover:underline">here</a> for more articles</span>
                 </div>
 
             </div>

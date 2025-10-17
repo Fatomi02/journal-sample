@@ -56,7 +56,7 @@ export default function PublicationEthics() {
               <b>(c) Research involving animals</b> <br />
               <strong>Acta BioScientia</strong> endorses the ARRIVE guidelines
               <a
-                className="text-[#d80c6c]"
+                className="text-primary"
                 href="https://arriveguidelines.org/"
               >
                 {" "}
@@ -65,7 +65,7 @@ export default function PublicationEthics() {
               for reporting experiments using live animals. Authors and
               reviewers must use the ARRIVE guidelines which can be found at{" "}
               <a
-                className="text-[#d80c6c]"
+                className="text-primary"
                 href="https://arriveguidelines.org/"
               >
                 https://arriveguidelines.org/

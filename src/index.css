@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary-blue: #0033a0;
+  --secondary-blue: #4da6ff;
+  --accent-purple: #a64dff;
+  --text-color: #1a1a1a;
+}
+
 
 * {
   margin: 0;
@@ -12,11 +19,16 @@
 }
 
 *::selection {
-  background-color: #d677a3;
+  background-color: var(--secondary-blue);
 }
 
 body {
   background-color:#FCFCFC;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  color: var(--primary-blue) !important;
+  font-weight: 600;
 }
 
 html {
@@ -32,10 +44,10 @@ input, textarea, select {
   width: 64px;
   height: 64px;
   position: relative;
-  background-image: linear-gradient(#000 16px, transparent 0),
-    linear-gradient(#e05897 16px, transparent 0),
-    linear-gradient(#e05897 16px, transparent 0),
-    linear-gradient(#000 16px, transparent 0);
+  background-image: linear-gradient(#4da6ff 16px, transparent 0),
+    linear-gradient(#0033a0 16px, transparent 0),
+    linear-gradient(#0033a0 16px, transparent 0),
+    linear-gradient(#4da6ff 16px, transparent 0);
   background-repeat: no-repeat;
   background-size: 16px 16px;
   background-position: left top, left bottom, right top, right bottom;

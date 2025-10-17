@@ -381,7 +381,7 @@ export default function SubmitPage() {
               </div>
               <button
                 type="submit"
-                className="text-white py-3 px-2 bg-[#d80c6c] w-[80px] rounded-lg"
+                className="text-white py-3 px-2 bg-primary w-[80px] rounded-lg"
               >
                 Send
               </button>

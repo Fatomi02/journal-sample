@@ -7,7 +7,7 @@ import Widget from "../../components/widget/widget";
 import emptyBanner from "../../assets/images/empty.png";
 import api from "../../api/api";
 import { toast } from "react-toastify";
-import book from '../../assets/icons/book.svg';
+import book from '../../assets/icons/book.png';
 
 
 export default function IssueDetails() {
@@ -57,7 +57,7 @@ export default function IssueDetails() {
                         filteredJournals.map((journal) => (
                             <div key={journal._id} className="flex gap-2 items-center">
                                 <img width={24} height={24} src={book} alt="journal" />
-                                <Link to={`/journal/${volume}/${journal.issue}/${journal.page}}`} className="font-medium tracking-tighter text-[#d80c6c] text-[16px] hover:underline">{journal.title}</Link>
+                                <Link to={`/journal/${volume}/${journal.issue}/${journal.page}}`} className="font-medium tracking-tighter text-primary text-[16px] hover:underline">{journal.title}</Link>
                             </div>
                         ))
                         }

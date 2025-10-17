@@ -18,8 +18,6 @@ import IssueDetails from "./pages/issue-details/issue-details";
 import JournalPage from "./pages/journal-page/journal-page";
 import { ToastContainer } from "react-toastify";
 import CurrentPage from "./pages/current-page/current";
-import CrossRef from "./pages/indexing/cross-refs/crossRef";
-
 function App() {
   return (
     <BrowserRouter>
@@ -34,7 +32,6 @@ function App() {
         <Route path="/editorialpolicy" element={<EditorialPolicy />} />
         <Route path="/submitpage" element={<SubmitPage />} />
         <Route path="/indexing" element={<Indexing />} />
-        <Route path="/indexing/cross-refs" element={<CrossRef />} />
         <Route path="/contactus" element={<ContactPage />} />
         <Route path="/editorial-in-board" element={<EditorialInBoard />} />
         <Route path="/peer-review" element={<PeerReview />} />
